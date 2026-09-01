@@ -55,3 +55,12 @@ npm install
 npm run dev    # http://localhost:3000
 npm run build  # includes the diagram/content coverage assertion
 ```
+
+## Double-click launchers (local, untracked)
+
+`launchers/Open-Website.command` (macOS) and `launchers/Open-Website.bat`
+(Windows) start the production server and open the site in a browser; on
+first run they install dependencies and build (Node.js required). The
+`launchers/` folder is gitignored, so it travels with copies of this folder
+but not with `git clone`. If you copy the folder between operating systems,
+delete `.next` once; the launcher rebuilds it.
