@@ -330,7 +330,7 @@ export const CONTENT: Record<string, ContentEntry> = {
     sections: [
       {
         paras: [
-          "The owner drafts and submits the Project Submission Form under a pinned methodology and version, both frozen for the project's lifetime. The platform consumes methodologies published elsewhere and writes none of its own.",
+          "The owner drafts and submits the Project Submission Form under a pinned methodology and version, both frozen for the project's lifetime. The current version of the platform uses methodologies published elsewhere and writes none of its own, for example, gcc, vcs or verra.",
         ],
       },
       {
@@ -913,18 +913,23 @@ export const CONTENT: Record<string, ContentEntry> = {
 
   tr2: {
     title: "Rule 2: a checked recalculation",
-    tagline: "The minted number has to sum in the methodology's own terms.",
+    tagline: "The minted number has to sum in the framework's own equations.",
     sections: [
       {
-        heading: "The rule",
+        heading: "The three equations",
         paras: [
-          "The issued quantity is the Certified Creditor's recalculation, broken into the methodology's own terms: verified quantity = BE − PE − LE, each term in tonnes of CO₂-equivalent, under the GWP set the pinned methodology names. Gases other than CO₂ get per-gas conversion lines.",
+          "The carbon credit framework quantifies a credit with three equations, and the ERVR walks through all of them. One credit stands for one tonne of CO₂-equivalent.",
+        ],
+        bullets: [
+          "CO₂e = Σ (Eᵢ × GWPᵢ). Gas conversion: each gas's emissions Eᵢ times its Global Warming Potential GWPᵢ, summed, turns methane, N₂O and the rest into tonnes of CO₂-equivalent. The pinned methodology names the GWP set (IPCC AR5 or AR6, 100-year, for example), and the ERVR shows a per-gas line wherever a gas other than CO₂ appears.",
+          "ER = BE − PE − LE. The central equation across standards: baseline emissions minus project emissions minus leakage emissions gives the reduction. The verified quantity on the ERVR is this number, each term stated in tCO₂e.",
+          "A = Σ Ay. Accumulation: the abatement A for a reporting span sums the adjusted net abatement Ay of each year y it covers. Here a verification covers one monitoring period, so a project's running total is the sum of its issued periods, one mint per period.",
         ],
       },
       {
         heading: "The check",
         paras: [
-          "The platform verifies the sum and the GWP match as a hard pre-check and bounces a failing ERVR before Operations or any committee reads it. The verified quantity lives on the ERVR alone, and the mint reads no other source.",
+          "The platform verifies the ER sum and the GWP-set match as a hard pre-check and bounces a failing ERVR before Operations or any committee reads it. The verified quantity lives on the ERVR alone, and the mint reads no other source.",
         ],
       },
       {

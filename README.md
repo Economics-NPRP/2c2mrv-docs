@@ -12,6 +12,7 @@ any element for the PRD detail behind it.
 | `2C2MRV-Annex-A-Contract-Framework.md` | Annex A — the smart-contract framework |
 | `2C2MRV-Flows.drawio` | The flow diagrams (draw.io source; business + technical pages) |
 | `2C2MRV-Flows.json` | The same diagrams as JSON — **the site reads its business page directly** |
+| `Carbon_Credit_Framework - Copy.docx` | The underlying framework study — source of the three quantification equations (GWP conversion, ER = BE − PE − LE, multi-year accumulation) |
 
 Conflict priority: **PRD → Annex A → Flows**. The business-flow page of both
 flow files has been aligned to PRD v0.6 (five institutions, the S11b
