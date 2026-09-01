@@ -10,6 +10,7 @@ import {
   LAYOUT,
   EDGE_STYLE,
   NON_CLICKABLE,
+  HIDDEN,
   type LayoutEntry,
   type EdgeStyleEntry,
 } from "./layout";
@@ -35,6 +36,7 @@ function assertCoverage(): void {
   const problems: string[] = [];
 
   for (const n of sourceNodes) {
+    if (HIDDEN.has(n.id)) continue; // in the flow files, deliberately not rendered
     if (!LAYOUT[n.id]) problems.push(`node "${n.id}" has no layout entry`);
     if (!NON_CLICKABLE.has(n.id) && !CONTENT[n.id])
       problems.push(`node "${n.id}" has no modal content`);
@@ -64,12 +66,14 @@ function assertCoverage(): void {
 
 assertCoverage();
 
-export const flowNodes: FlowNodeModel[] = sourceNodes.map((n) => ({
-  id: n.id,
-  label: n.label,
-  layout: LAYOUT[n.id],
-  content: CONTENT[n.id],
-}));
+export const flowNodes: FlowNodeModel[] = sourceNodes
+  .filter((n) => !HIDDEN.has(n.id))
+  .map((n) => ({
+    id: n.id,
+    label: n.label,
+    layout: LAYOUT[n.id],
+    content: CONTENT[n.id],
+  }));
 
 export const flowEdges: FlowEdgeModel[] = sourceEdges.map((e) => ({
   id: e.id,
@@ -82,3 +86,5 @@ export const flowEdges: FlowEdgeModel[] = sourceEdges.map((e) => ({
 export { TONES, EDGE_COLOR, CANVAS, NON_CLICKABLE } from "./layout";
 export type { Tone, NodeKind } from "./layout";
 export type { ContentEntry, ContentSection } from "./content";
+export { VOCABULARY } from "./vocabulary";
+export type { VocabGroup, VocabTerm } from "./vocabulary";

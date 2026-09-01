@@ -90,24 +90,6 @@ export default function DetailModal({ entry, onClose }: DetailModalProps) {
                 ))}
               </div>
 
-              {/* Footer: PRD references */}
-              {entry.refs && entry.refs.length > 0 && (
-                <div className="shrink-0 border-t border-gray-200 bg-gray-50 px-6 py-2.5">
-                  <span className="mr-2 text-[10.5px] font-semibold uppercase tracking-wider text-gray-400">
-                    PRD refs
-                  </span>
-                  <span className="inline-flex flex-wrap gap-1 align-middle">
-                    {entry.refs.map((r) => (
-                      <span
-                        key={r}
-                        className="rounded border border-gray-300 bg-white px-1.5 py-px font-mono text-[10.5px] text-gray-600"
-                      >
-                        {r}
-                      </span>
-                    ))}
-                  </span>
-                </div>
-              )}
             </>
           )}
         </Dialog.Content>

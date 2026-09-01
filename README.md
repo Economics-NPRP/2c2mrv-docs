@@ -30,11 +30,15 @@ authority confirmation); Layer 1 has no Competent Authority workspace (D-11).
   draw.io and re-export) and the site follows.
 - **Positions and colors** mirror the `.drawio` geometry 1:1
   (`src/data/layout.ts`).
-- **Modal content** is written from the PRD, per node, with PRD reference
-  chips (`src/data/content.ts`).
-- A build-time assertion fails `next build` if any diagram node lacks layout
-  or modal content (`src/data/index.ts`), so the three layers cannot drift
-  silently.
+- **Modal content** is written from the PRD, per node, but phrased as
+  standalone explanations — no document citations (`src/data/content.ts`).
+- **Vocabulary** in the header nav explains every abbreviation and term of
+  art on the chart (`src/data/vocabulary.ts`); it supersedes the poster's
+  bottom "four documents" caption, which the site therefore hides (the node
+  stays in the flow files for the poster).
+- A build-time assertion fails `next build` if any rendered diagram node
+  lacks layout or modal content (`src/data/index.ts`), so the layers cannot
+  drift silently.
 
 Rendering: React Flow (`@xyflow/react`) canvas with the draw.io palette,
 pan/zoom, keyboard-accessible nodes, and a Radix dialog for details. This site

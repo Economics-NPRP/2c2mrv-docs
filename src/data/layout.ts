@@ -108,16 +108,22 @@ export const LAYOUT: Record<string, LayoutEntry> = {
   b13: { x: 470, y: 436, w: 190, h: 60, kind: "stage", tone: "retired", bold: true },
   b14: { x: 705, y: 436, w: 200, h: 60, kind: "stage", tone: "publicLookup", dashed: true },
 
-  // three rules + documents strip
+  // three rules
   tr: { x: 40, y: 540, w: 500, h: 24, kind: "phase", tone: "plain", bold: true, align: "left", fontSize: 13 },
   tr1: { x: 40, y: 572, w: 360, h: 72, kind: "rule", tone: "vvb" },
   tr2: { x: 420, y: 572, w: 400, h: 72, kind: "rule", tone: "mint" },
   tr3: { x: 840, y: 572, w: 420, h: 72, kind: "rule", tone: "ledger" },
-  docs: { x: 40, y: 668, w: 1240, h: 22, kind: "docs", tone: "plain", align: "left", fontSize: 11, textColor: "#333333" },
 };
 
 /** Node ids that render but open no modal. */
 export const NON_CLICKABLE = new Set(["bt", "bs"]);
+
+/**
+ * Node ids present in the flow files but not rendered on the site.
+ * The poster's bottom "four documents" caption is superseded here by the
+ * Vocabulary panel in the header navigation.
+ */
+export const HIDDEN = new Set(["docs"]);
 
 export type HandleId = "t" | "b" | "b2" | "l" | "r";
 
