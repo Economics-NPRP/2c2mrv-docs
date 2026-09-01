@@ -17,8 +17,11 @@ Conflict priority: **PRD → Annex A → Flows**. The business-flow page of both
 flow files has been aligned to PRD v0.6 (five institutions, the S11b
 Competent-Authority gate before every mint, seeded shortlist draw + Steering
 selection, S2/S8 stages, document-naming rules). The technical page is not yet
-aligned — known deviations from Annex A are listed in the PRD-alignment plan
-and deliberately deferred.
+aligned — known deviations from PRD v0.6 / Annex A, deliberately deferred:
+`c2` says "THRESHOLD-SIGNED by Steering keys" (Annex A: Creditor Committee
+member keys plus a separate Competent Authority key, and `attestAuthorization`
+is missing); `a5`'s issuance job reads "decision + attested ERVR" (missing the
+authority confirmation); Layer 1 has no Competent Authority workspace (D-11).
 
 ## The site
 
