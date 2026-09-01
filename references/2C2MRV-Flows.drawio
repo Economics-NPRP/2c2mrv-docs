@@ -151,7 +151,7 @@
             <mxPoint as="offset" x="0" y="-18" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e9r" edge="1" parent="1" source="JaASU19LGJu8xGfdlSRQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=10;" target="b9" value="refused, with reason">
+        <mxCell id="e9r" edge="1" parent="1" source="JaASU19LGJu8xGfdlSRQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=10;" target="b9" value="returned or refused, with a reason">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1200" y="258" />
