@@ -45,7 +45,7 @@ export default function DiagramNode({ data }: NodeProps<DiagramNodeType>) {
   const { layout, label, content } = model;
   const tone = TONES[layout.tone];
   const clickable = Boolean(content);
-  const ariaLabel = content ? `${content.title} — details` : undefined;
+  const ariaLabel = content ? `${content.title}, details` : undefined;
 
   /* ---------- text-only kinds: title, subtitle, phase, note, docs ---------- */
   if (

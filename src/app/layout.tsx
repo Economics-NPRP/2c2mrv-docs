@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "2C2MRV — Business Flow",
   description:
-    "Interactive business flow of the 2C2MRV carbon-credit MRV platform — click any step for the PRD detail behind it.",
+    "The 2C2MRV business flow as an interactive chart. Click any step for the detail behind it.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

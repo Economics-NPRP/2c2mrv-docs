@@ -32,6 +32,8 @@ authority confirmation); Layer 1 has no Competent Authority workspace (D-11).
   (`src/data/layout.ts`).
 - **Modal content** is written from the PRD, per node, but phrased as
   standalone explanations — no document citations (`src/data/content.ts`).
+  All site prose follows the project skill `.claude/skills/stop-slop`
+  (active voice, no em dashes, no AI-tell patterns).
 - **Vocabulary** in the header nav explains every abbreviation and term of
   art on the chart (`src/data/vocabulary.ts`); it supersedes the poster's
   bottom "four documents" caption, which the site therefore hides (the node

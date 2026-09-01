@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { VOCABULARY } from "@/data";
 
 /**
- * "Vocabulary" in the header navigation: every abbreviation and term of art
+ * "Vocabulary" in the header navigation: the abbreviations and terms of art
  * used on the chart, explained in plain language.
  */
 export default function VocabularyDialog() {
@@ -21,7 +21,7 @@ export default function VocabularyDialog() {
               Vocabulary
             </Dialog.Title>
             <Dialog.Description className="mt-1 text-[13px] italic leading-snug text-gray-600">
-              Every abbreviation and term of art on the chart, in plain language.
+              The abbreviations and terms of art on the chart, in plain language.
             </Dialog.Description>
             <Dialog.Close
               aria-label="Close"

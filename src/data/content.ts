@@ -1,10 +1,11 @@
 /**
  * Modal content for every clickable element of the business-flow diagram.
  *
- * Written from the 2C2MRV MVP PRD v0.6 (references/2C2MRV-MVP-PRD.md) with
- * chain details from Annex A — but phrased as standalone explanations: no
- * document citations. The S-numbers are the platform's own stage ids, which
- * also appear as badges on the diagram.
+ * Source material: the 2C2MRV MVP PRD v0.6 (references/2C2MRV-MVP-PRD.md)
+ * and Annex A. The prose stands alone, cites nothing, and follows the
+ * stop-slop skill (.claude/skills/stop-slop): active voice, named actors,
+ * no em dashes, no adverb padding. The S-numbers are the platform's own
+ * stage ids, printed as badges on the diagram.
  */
 
 export interface ContentSection {
@@ -26,40 +27,40 @@ export interface ContentEntry {
 
 export const CONTENT: Record<string, ContentEntry> = {
   /* ------------------------------------------------------------------ */
-  /* Legend — the five institutions + the automatic stages              */
+  /* Legend: the five institutions + the automatic stages               */
   /* ------------------------------------------------------------------ */
 
   lg1: {
     title: "Project Owning Firm",
     actorLabel: "Institution",
-    tagline: "The party that claims — and later holds — the credits.",
+    tagline: "This firm claims the reductions, then holds the credits.",
     sections: [
       {
-        heading: "What it does",
+        heading: "The job",
         bullets: [
-          "Drafts and submits the PSF (project plan) and operates the activity.",
-          "Submits a monitoring report (PMR) for each period and answers audit findings.",
-          "Holds, transfers and retires credits — the only institution type that can.",
+          "Drafts and submits the PSF, then runs the activity it describes.",
+          "Files a monitoring report (PMR) for each period and answers audit findings.",
+          "Holds, transfers and retires credits. No other institution type can.",
         ],
       },
       {
-        heading: "What it never does",
+        heading: "Off limits",
         bullets: [
-          "Assess its own submission.",
-          "Set its own verified quantity — that number is always the second auditor's recalculation.",
+          "Assessing its own submission.",
+          "Setting its own verified quantity. The second auditor recalculates that number from evidence.",
         ],
       },
       {
-        heading: "People inside it",
+        heading: "The people",
         bullets: [
-          "Firm Admin · Project Manager · Read-only.",
-          "Submission and PMR attestation is performed by a named user and recorded as such.",
+          "Firm Admin, Project Manager, and a read-only seat.",
+          "A named user signs each submission, and the record keeps the name.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Notes",
         paras: [
-          "Only owner-firm accounts may hold credits for now, so trading is firm-to-firm; a dedicated buyer institution comes later. The owner pays the engagement fee into escrow before any outcome exists, and has no choice and no veto over which auditor is assigned.",
+          "Owner accounts alone may hold credits for now, so firms trade with firms; a dedicated buyer role comes later. The owner pays the engagement fee into escrow before any outcome exists and gets no say in which auditor the draw produces.",
         ],
       },
     ],
@@ -68,40 +69,39 @@ export const CONTENT: Record<string, ContentEntry> = {
   lg2: {
     title: "Auditor (VVB)",
     actorLabel: "Institution",
-    tagline:
-      "Validation & Verification Body — audits, recommends, and never approves.",
+    tagline: "Audits and recommends. The committee decides.",
     sections: [
       {
-        heading: "What it does",
+        heading: "The job",
         bullets: [
-          "Validates project design through its Certified Auditor role (the PVR, before anything runs).",
-          "Verifies performance through its Certified Creditor role (the ERVR, after measurement).",
-          "Raises and closes findings; issues reports with an opinion and assurance level.",
+          "Validates project design through its Certified Auditor role: the PVR, written before anything runs.",
+          "Verifies performance through its Certified Creditor role: the ERVR, written after measurement.",
+          "Raises findings, closes them, and issues reports that carry an opinion and an assurance level.",
         ],
       },
       {
-        heading: "What it never does",
+        heading: "Off limits",
         bullets: [
-          "Validate and verify the same project — enforced at institution level.",
-          "Approve anything. The auditor recommends; the committee decides.",
-          "Hold credits.",
+          "Auditing both design and performance on one project. The platform blocks this at institution level.",
+          "Approving anything. The committee holds that power.",
+          "Holding credits.",
         ],
       },
       {
-        heading: "People inside it",
+        heading: "The people",
         bullets: [
-          "VVB Admin (no audit-content capabilities) · Team Leader · Team Member.",
-          "Approver — independent technical review; must not be on the audit team for that engagement.",
-          "Certified Auditor — may lead and sign a validation engagement (PVR).",
-          "Certified Creditor — may lead and sign a verification engagement (ERVR and its verified quantity).",
-          "A person may hold both certifications; the institution-level separation still applies.",
+          "VVB Admin (no reach into audit content), Team Leader, Team Member.",
+          "Approver: reviews and signs a report they did no team work on.",
+          "Certified Auditor: may lead and sign a PVR.",
+          "Certified Creditor: may lead and sign an ERVR and its verified quantity.",
+          "One person may hold both certifications. The institution-level split still applies.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Notes",
         paras: [
-          "Accreditation is recorded as external evidence — the platform does not grant it, and an expired or out-of-scope accreditation blocks the draw. The VVB is paid from escrow when its report is published, identically for any opinion — an adverse opinion pays the same as a positive one, so the auditor has nothing to gain from pleasing the owner.",
-          "Naming hazard: in finance a “creditor” is a lender. Buyers and regulators will read “Certified Creditor” that way on first contact — expect to explain it.",
+          "An outside body grants accreditation; the platform records it as evidence, and an expired or out-of-scope record blocks the draw. The escrow pays the auditor when the report publishes, the same for any opinion, so a friendly conclusion earns nothing extra.",
+          "One naming trap: finance readers see “creditor” and think lender. Expect to explain the term on first contact.",
         ],
       },
     ],
@@ -110,38 +110,38 @@ export const CONTENT: Record<string, ContentEntry> = {
   lg3: {
     title: "Steering Committee",
     actorLabel: "Institution",
-    tagline: "The body that decides — never the one that audits.",
+    tagline: "The body that decides and audits nothing.",
     sections: [
       {
-        heading: "What it does",
+        heading: "The job",
         bullets: [
           "Admits VVBs to the platform.",
-          "Selects the engagement VVB from the drawn shortlist, with a recorded public reason.",
-          "Decides registration (all members vote).",
-          "Decides issuance — through its Creditor Committee role, a designated subset with its own quorum.",
+          "Picks the engagement auditor from the drawn shortlist and records a public reason.",
+          "Votes on registration (all members).",
+          "Votes on issuance (Creditor Committee members alone, under their own quorum).",
         ],
       },
       {
-        heading: "What it never does",
+        heading: "Off limits",
         bullets: [
-          "Perform any audit work.",
-          "Select a VVB outside the shortlist, re-order it, or trigger a re-draw without a declared conflict.",
-          "Decide where a member has declared an interest — the exclusion is recorded.",
+          "Audit work of any kind.",
+          "Picking outside the shortlist, re-ordering it, or forcing a re-draw. One exception: the selected VVB declares a conflict, and the log records the re-draw.",
+          "Voting with a declared interest. The platform excludes the member and records the exclusion.",
         ],
       },
       {
-        heading: "People inside it",
+        heading: "The people",
         bullets: [
-          "Member — votes on registration.",
-          "Creditor Committee member — only these members vote on issuance decisions.",
-          "Chair — finalizes a decision once quorum is met.",
+          "Member: votes on registration.",
+          "Creditor Committee member: votes on issuance.",
+          "Chair: finalizes a decision once quorum is met.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Limits",
         paras: [
-          "Operations and the Steering Committee are organs of one legal party — the program administrator. Their separation is internal control, not institutional independence, and the platform publishes that limitation rather than implying more.",
-          "The Creditor Committee is a subset, so issuance rests on fewer people than registration. Whether that is specialisation or concentration depends on how the subset is appointed and rotated; the charter that will govern this is not yet written.",
+          "Operations and Steering belong to one legal party, the program administrator. Their separation is internal control, and the platform publishes that limit instead of claiming independence.",
+          "The Creditor Committee is a subset, so fewer people decide issuance than registration. A charter for appointing and rotating that subset does not exist yet.",
         ],
       },
     ],
@@ -150,55 +150,55 @@ export const CONTENT: Record<string, ContentEntry> = {
   lg4: {
     title: "Operations",
     actorLabel: "Institution",
-    tagline: "Moderation and procedural review — nothing else.",
+    tagline: "Moderation and paperwork review, nothing more.",
     sections: [
       {
-        heading: "What it does",
+        heading: "The job",
         bullets: [
-          "Moderates consultation comments: soft-hide with a reason code; the comment and the redaction are both retained.",
-          "May extend a consultation window once, by no more than the original duration, with a recorded reason.",
-          "Performs the procedural compliance review of the ERVR.",
+          "Moderates public comments: a soft hide with a reason code. The record keeps both the comment and the redaction.",
+          "May extend a comment window once, by at most its original length, with a recorded reason.",
+          "Runs the procedural compliance review of the ERVR.",
         ],
       },
       {
-        heading: "What it never does",
+        heading: "Off limits",
         bullets: [
-          "Assign VVBs, screen intake, or admit VVBs.",
-          "Decide anything — it can return the ERVR to the auditor, never reject or approve.",
-          "Touch audit content, quantities or findings.",
-          "Hold credits.",
+          "Assigning, screening or admitting VVBs.",
+          "Deciding anything. It can return an ERVR for correction; approval and rejection sit with the committee.",
+          "Touching audit content, quantities or findings.",
+          "Holding credits.",
         ],
       },
       {
-        heading: "People inside it",
+        heading: "The people",
         bullets: [
-          "Moderator — comment redaction, window extension.",
-          "Compliance Reviewer — completes the judgment checklist of the compliance review.",
-          "No Operations person role carries any audit, assignment or decision capability.",
+          "Moderator: comment redaction, window extension.",
+          "Compliance Reviewer: completes the review's judgment checklist.",
+          "No Operations role carries audit, assignment or decision power.",
         ],
       },
     ],
   },
 
   lg5: {
-    title: "Automatic (system) stages",
+    title: "Automatic stages",
     actorLabel: "No human owner",
-    tagline: "Steps with no human owner, logged as “system” so the audit trail has no gaps.",
+    tagline: "Steps no person owns, logged as “system”.",
     sections: [
       {
-        heading: "Which steps are automatic",
+        heading: "The automatic steps",
         bullets: [
-          "S2 — the completeness check.",
-          "S3 — the consultation window (opens and closes on its own).",
-          "The shortlist draw inside S4 and S8 — the selection that follows is Steering's, so those stages as a whole are not automatic.",
-          "S12 — issuance (the mint).",
+          "S2, the completeness check.",
+          "S3, the comment window. It opens and closes on its own clock.",
+          "The shortlist draw inside S4 and S8. The pick that follows belongs to Steering, so those stages as a whole keep a human owner.",
+          "S12, the mint.",
         ],
       },
       {
-        heading: "Why the mint has no owner",
+        heading: "The mint has no owner",
         paras: [
-          "The permissions to mint and burn credits are bound to a special “Registry” institution type that a database constraint makes unassignable to any account. The mint is callable only by an automated issuance job, which derives its quantity from the published ERVR and requires both the approved Steering decision and the Competent Authority confirmation for the same period; it takes no quantity parameter.",
-          "The Registry is not an institution and not an actor with judgment — it is the enforced answer to “who may create supply”: nobody with a login.",
+          "Mint and burn permissions bind to a reserved “Registry” type that a database rule keeps off all accounts. An automated job performs the mint, reads its quantity from the published ERVR, and runs once the committee decision and the ministry confirmation both exist for the period. The job accepts no quantity argument.",
+          "The Registry holds no judgment and no seat. It exists so that creating supply belongs to no login.",
         ],
       },
     ],
@@ -206,37 +206,37 @@ export const CONTENT: Record<string, ContentEntry> = {
 
   lg6: {
     title: "Competent Authority (MoECC)",
-    actorLabel: "Institution — a state ministry",
-    tagline: "Confirms or refuses every issuance, before any mint.",
+    actorLabel: "Institution: a state ministry",
+    tagline: "A ministry confirms or refuses each issuance before the mint.",
     sections: [
       {
-        heading: "What it does",
+        heading: "The job",
         bullets: [
-          "Receives the issuance packet after an approved issuance decision.",
+          "Receives the issuance packet once the committee approves.",
           "Confirms or refuses it, with a reason, before any mint.",
         ],
       },
       {
-        heading: "What it never does",
+        heading: "Off limits",
         bullets: [
-          "Audit anything or alter a quantity.",
-          "Decide registration or issuance; admit or select VVBs.",
-          "Mint, or hold credits.",
-          "No authority capability reads or writes audit content, findings, quantities, decisions, or balances — it sees the packet and the public record, nothing else.",
+          "Auditing, or touching a quantity.",
+          "Deciding registration or issuance; admitting or selecting VVBs.",
+          "Minting, or holding credits.",
+          "Reading or writing audit content, findings, decisions or balances. The ministry sees the packet and the public record.",
         ],
       },
       {
-        heading: "People inside it",
+        heading: "The people",
         bullets: [
-          "Authorizing Officer — records the outcome and signs a confirmation with the authority's own key.",
-          "Read-only.",
+          "Authorizing Officer: records the outcome and signs a confirmation with the ministry's own key.",
+          "A read-only seat.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Limits",
         paras: [
-          "Unlike Operations and Steering, the authority is an independent party — a state ministry. That is what makes its confirmation worth more than another internal gate, and also what makes its response time a risk the platform does not control.",
-          "The confirmation is a product gate, not a legal act: no enabling law currently gives the ministry a statutory role here, no international registry adjustment is made, and it is not Article 6 host-country authorization. The interface is a login plus an exportable packet; the authority's signing key lives in its own hardware, never on the platform host.",
+          "The ministry stands outside the platform, unlike Operations and Steering. Its signature carries weight for that reason, and its response time sits outside the platform's control for the same reason.",
+          "The confirmation is a product gate. Qatar has no law that assigns the ministry this role, the record adjusts no international registry, and it is not Article 6 host-country authorization. The ministry gets a login and an exportable packet; its signing key stays in its own hardware, off the platform host.",
         ],
       },
     ],
@@ -247,72 +247,72 @@ export const CONTENT: Record<string, ContentEntry> = {
   /* ------------------------------------------------------------------ */
 
   ph1: {
-    title: "Phase 1 — Register the project",
+    title: "Phase 1: register the project",
     stage: "S1–S6",
-    tagline: "From a submitted plan to a registered project. No credits yet.",
+    tagline: "The path from a submitted plan to a registered project. Zero credits at the end.",
     sections: [
       {
-        heading: "The path in one sentence",
+        heading: "The path",
         paras: [
-          "The Project Owner submits the PSF under a pinned methodology version → an automated completeness gate checks presence and schema → a public consultation window runs and comments are recorded → the system draws a shortlist of accredited, in-scope VVBs selected at random and the Steering Committee selects one from that shortlist with a recorded, public reason, the engagement funded from the escrowed fee → that VVB (Auditor A, led by a Certified Auditor) conducts the validation audit, running the findings loop with the owner until every CAR is closed and every CL resolved, and issues the PVR recommending registration or not → the Steering Committee approves or rejects.",
+          "The owner submits the PSF under a pinned methodology version → the completeness gate checks presence and schema → the public comments for a fixed window → the system draws a shortlist of accredited, in-scope VVBs at random and Steering picks one with a recorded public reason, funded from the escrowed fee → Auditor A, led by a Certified Auditor, audits the design, works the findings loop with the owner until each CAR closes and each CL resolves, and issues the PVR with a recommendation → Steering approves or rejects.",
         ],
       },
       {
-        heading: "What approval fixes",
+        heading: "Approval fixes two things",
         bullets: [
-          "The project becomes REGISTERED.",
-          "The crediting period is fixed — the outer window within which any monitoring period may earn credits.",
-          "No credits are created at registration.",
+          "The platform marks the project REGISTERED.",
+          "The crediting period locks: the outer window in which any monitoring period may earn.",
+          "Credits created at registration: zero.",
         ],
       },
       {
         heading: "Money",
         paras: [
-          "The validation fee — auditor portion + platform portion — is paid into escrow at submission, before any outcome exists. The platform portion is identical in every outcome branch.",
+          "The owner pays the validation fee, auditor portion plus platform portion, into escrow at submission, before any outcome exists. The platform's cut stays the same in each outcome branch.",
         ],
       },
     ],
   },
 
   ph2: {
-    title: "Phase 2 — Earn credits",
+    title: "Phase 2: earn credits",
     stage: "S7–S12",
-    tagline: "Once per monitoring period: measure, verify, review, decide, confirm, mint.",
+    tagline: "One loop per monitoring period, from measurement to mint.",
     sections: [
       {
-        heading: "The loop in one sentence",
+        heading: "The loop",
         paras: [
-          "The owner submits the PMR with the claimed reductions for period n → the system draws a shortlist from which Auditor A is excluded and Steering selects a second, different auditor (B ≠ A) → Auditor B's Certified Creditor recalculates the reductions from evidence and issues the ERVR carrying the verified quantity decomposed into BE, PE and LE → Operations performs a procedural compliance review → the Creditor Committee approves or rejects issuance → on approval the system generates the issuance packet and the Competent Authority (MoECC) confirms or refuses it → on confirmation the Registry mints serialized credits for period n, in exactly the quantity the ERVR verified. The project then returns to monitoring for period n+1.",
+          "The owner files the PMR with the claimed reductions for period n → the system draws a shortlist without Auditor A and Steering picks a second, different auditor (B ≠ A) → Auditor B's Certified Creditor recalculates the reductions from evidence and issues the ERVR carrying the verified quantity, broken into BE, PE and LE → Operations runs its procedural review → the Creditor Committee votes yes or no → on a yes the system builds the issuance packet and the ministry confirms or refuses it → on a confirmation the Registry mints serialized credits for period n in the quantity the ERVR verified. The project then returns to monitoring for period n+1.",
         ],
       },
       {
-        heading: "Hard period rules",
+        heading: "Period rules",
         bullets: [
-          "Monitoring periods must not overlap; gaps are permitted and earn nothing.",
-          "Every period must fall entirely within the crediting period.",
-          "A period may be issued at most once, ever — enforced on the period record and again on-chain.",
+          "Monitoring periods never overlap. Gaps earn nothing.",
+          "Each period sits whole inside the crediting period.",
+          "Each period mints at most once, ever. The period record enforces this, and the chain enforces it again.",
         ],
       },
     ],
   },
 
   ph3: {
-    title: "Phase 3 — Use the credits",
-    tagline: "Hold, trade firm-to-firm, retire permanently, verify publicly.",
+    title: "Phase 3: use the credits",
+    tagline: "Credits change hands, retire, and stay checkable by anyone.",
     sections: [
       {
-        heading: "Credit unit states",
+        heading: "Unit states",
         paras: [
-          "ISSUED → HELD → (TRANSFERRED → HELD)* → RETIRED. Retirement is terminal, immutable and non-transferable.",
+          "ISSUED → HELD → (TRANSFERRED → HELD)* → RETIRED. A retired unit stays retired; no path leads back.",
         ],
       },
       {
         heading: "The rules",
         bullets: [
-          "Transfer moves a serial range between accounts and appends to ownership history; partial ranges may be split.",
-          "Only HELD units may be transferred; RETIRED units are locked at the database level, not just in application code.",
-          "Nothing is ever hard-deleted; states are appended, never overwritten.",
-          "A public serial lookup resolves any credit with no login.",
+          "A transfer moves a serial range between accounts and appends to the ownership history. Ranges split as needed.",
+          "HELD units alone may move. The database locks RETIRED units; application code gets no vote.",
+          "The ledger appends states and deletes nothing.",
+          "You can resolve any serial in the public lookup without an account.",
         ],
       },
     ],
@@ -323,36 +323,35 @@ export const CONTENT: Record<string, ContentEntry> = {
   /* ------------------------------------------------------------------ */
 
   b1: {
-    title: "Owner submits the project plan (PSF)",
+    title: "The owner submits the plan (PSF)",
     stage: "S1",
     actorLabel: "Project Owning Firm",
-    tagline: "The claim that starts everything — under a methodology pinned forever.",
+    tagline: "A plan under a methodology pinned for life.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "The owner drafts and submits the Project Submission Form under a pinned methodology and version — both immutable for the lifetime of the project. The platform consumes externally published methodologies; it does not author them.",
+          "The owner drafts and submits the Project Submission Form under a pinned methodology and version, both frozen for the project's lifetime. The platform consumes methodologies published elsewhere and writes none of its own.",
         ],
       },
       {
-        heading: "What the PSF carries",
+        heading: "Inside the PSF",
         bullets: [
-          "Design, baseline, additionality, monitoring plan, safeguards, ownership proof.",
-          "Proposed crediting period.",
-          "An ex-ante estimate — reference only. It carries no balance and the issuance machinery cannot read it.",
+          "Design, baseline, additionality case, monitoring plan, safeguards, proof of ownership.",
+          "A proposed crediting period.",
+          "An ex-ante estimate. A reference figure: no balance behind it, and the issuance machinery cannot read the field.",
         ],
       },
       {
-        heading: "Exit condition",
+        heading: "Exit",
         bullets: [
-          "Required fields and attachments present; methodology version pinned.",
-          "The validation fee is held in escrow — paid before any outcome exists.",
+          "Required fields and attachments in place; methodology version pinned.",
+          "Validation fee sitting in escrow, paid before any outcome exists.",
         ],
       },
       {
-        heading: "If it goes wrong",
+        heading: "On failure",
         paras: [
-          "A failed completeness check returns the project here, editable, with a machine-generated reason list.",
+          "A failed completeness check sends the plan back here, editable, with a machine-written reason list.",
         ],
       },
     ],
@@ -362,176 +361,171 @@ export const CONTENT: Record<string, ContentEntry> = {
     title: "Completeness check",
     stage: "S2",
     actorLabel: "Automatic (system)",
-    tagline: "A presence and schema check — not a judgment.",
+    tagline: "The gate checks presence and schema. It judges nothing.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "An automated gate checks that required fields and attachments are present and schema-valid. It passes or it fails; no human is involved, and the transition is logged with “system” as the acting principal.",
+          "An automated gate checks that required fields and attachments exist and parse. Pass or fail, no person involved; the log books the transition under “system”.",
         ],
       },
       {
-        heading: "What it is not",
+        heading: "No screening happens here",
         paras: [
-          "It is not screening, and the platform deliberately labels it that way: automated validation is presence checking, and calling it screening would overstate the control. Nobody at the platform reviews or filters submissions here — Operations never screens intake.",
+          "The gate does no screening, and the platform labels it that way on purpose, because calling a presence check “screening” would overstate the control. Nobody at the platform filters submissions at this step, and Operations screens no intake.",
         ],
       },
       {
-        heading: "If it fails",
+        heading: "On failure",
         paras: [
-          "The project returns to submission, editable, with a machine-generated reason list. On pass, the consultation window opens automatically.",
+          "The plan returns to the owner, editable, with a machine-written reason list. On a pass, the comment window opens on its own.",
         ],
       },
     ],
   },
 
   b2: {
-    title: "Public consultation window",
+    title: "The public comment window",
     stage: "S3",
     actorLabel: "Automatic · Operations moderates",
-    tagline: "15 calendar days in which anyone can comment, on the record.",
+    tagline: "Fifteen days for anyone to comment on the record.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "The window opens automatically when the completeness check passes and runs for 15 calendar days — matching the project-level public consultation of the GCC program this platform is modelled on. Comments are recorded with an author identity and are visible on the public project page.",
+          "The window opens when the completeness check passes and runs 15 calendar days, the same span as the GCC program this platform draws on. The system records each comment under its author's name and shows it on the public project page.",
         ],
       },
       {
-        heading: "The teeth",
+        heading: "Teeth",
         bullets: [
-          "The validation audit cannot conclude until every consultation comment has a recorded auditor response.",
-          "At close, a fingerprint of the whole comment set is anchored to the public ledger, so no comment can be added or removed afterwards.",
-          "Every comment is later shown on the public project page together with the auditor's response.",
+          "Auditor A cannot close the design audit while any comment lacks a recorded response.",
+          "At close, the system anchors a fingerprint of the full comment set to the public ledger, freezing the set.",
+          "The public project page later pairs each comment with the auditor's answer.",
         ],
       },
       {
-        heading: "Moderation, bounded",
+        heading: "Moderation limits",
         bullets: [
-          "Operations may soft-hide a comment with a reason code — the comment and the redaction are both retained.",
-          "Operations may extend the window once, by no more than the original duration. No party may close a window early.",
+          "Operations may soft-hide a comment with a reason code; the record keeps both the comment and the redaction.",
+          "Operations may extend the window once, by at most its original length. No role can close a window early.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Limits",
         paras: [
-          "Comment submission locks when the window closes. Some established registries accept and answer late comments; this platform is slightly below that bar for now.",
+          "Comment submission locks at close. Some older registries accept and answer late comments; this platform sits under that bar for now.",
         ],
       },
     ],
   },
 
   b3: {
-    title: "Seeded draw + Committee selection",
+    title: "A random draw, then a public pick",
     stage: "S4",
     actorLabel: "Automatic draw → Steering selects",
-    tagline: "No human composes the pool or the shortlist. The choice that remains is public.",
+    tagline: "Chance builds the shortlist. The committee picks in the open.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "The system draws a shortlist of k or all VVBs (default three) selected at random from the eligible pool. The random seed is committed on-chain before the draw runs, and the pool snapshot and shortlist are stored — anyone can recompute the shortlist and confirm it wasn't rigged. The Steering Committee then selects exactly one from that shortlist and must record a selection reason, which is public.",
+          "The system draws a shortlist of k or all VVBs (default three) at random from the eligible pool, commits the random seed on-chain before the draw, and stores the pool snapshot with the result. You can recompute the shortlist from the seed and confirm the draw ran straight. Steering then picks one name from the list and records a public reason.",
         ],
       },
       {
-        heading: "The pool filter (published)",
+        heading: "The pool filter, published",
         bullets: [
-          "Accreditation active, in scope, unexpired — exclusion happens before the draw, not as a check on the result.",
-          "Methodology-family experience or newcomer pairing; a capacity cap; a rotation cap; no declared conflict.",
-          "The draw is uniform over the filtered pool — it never ranks.",
+          "Accreditation active, in scope and unexpired. The filter runs before the draw.",
+          "Experience with the methodology family, or a newcomer pairing; a capacity cap; a rotation cap; no declared conflict.",
+          "The draw ranks nothing and weights nothing. Each filtered candidate carries equal odds.",
         ],
       },
       {
-        heading: "What Steering cannot do",
+        heading: "Bounds on Steering",
         bullets: [
-          "Select outside the shortlist, re-order it, or trigger a re-draw — except on a conflict declared by the selected VVB, logged with reason.",
-          "The owner has no choice and no veto at any step.",
+          "The pick must come from the list. No re-ordering, no re-draws, with one exception: the selected VVB declares a conflict, and the log records the re-draw.",
+          "The owner gets no choice and no veto at any step.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Limits",
         paras: [
-          "The claim that survives is “no human chose the pool or the shortlist”, not “no human chose the VVB”. A committee that consistently picks the most lenient of three regains roughly a third of the selection power the pure draw had removed. The platform makes that pattern public — every engagement shows the seed, pool, shortlist, selection and reason, and the public per-VVB statistics page shows shortlisted-vs-selected counts next to each VVB's claimed-vs-verified gap — but public is not the same as impossible.",
+          "The claim that survives scrutiny: no person built the pool or the shortlist. A person still picks from three, and a committee that keeps choosing the softest option wins back about a third of the power the draw removed. Each engagement's seed, pool, shortlist, pick and reason sit on the public record, and the per-VVB statistics page sets shortlisted-vs-picked counts beside each firm's claimed-vs-verified gap. The platform exposes the pattern; it cannot forbid the choice.",
         ],
       },
     ],
   },
 
   b4: {
-    title: "Validation audit — the PVR",
+    title: "The design audit (PVR)",
     stage: "S5",
     actorLabel: "Auditor A · signed by a Certified Auditor",
-    tagline: "The design audit: is this project sound before anything is measured?",
+    tagline: "Auditor A tests the design before anything runs.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Auditor A (the VVB just selected), led by a Certified Auditor, assesses the project design: a desk assessment of every PSF section, a baseline and additionality conclusion, a site visit with a named sign-off, and a response to every consultation comment. The result is the Project Verification Report — an audit of design, before anything runs — with an opinion, an assurance level, and a recommendation on registration and crediting period.",
+          "Auditor A, under a Certified Auditor lead, works through the design: a desk assessment of each PSF section, a conclusion on baseline and additionality, a site visit signed by a named person, and an answer to each public comment. The output is the Project Verification Report, with an opinion, an assurance level, and a recommendation on registration and crediting period.",
         ],
       },
       {
         heading: "The findings loop",
         bullets: [
-          "Desk sections are individually assessed Pass / CAR / CL; unassessed sections block the report.",
-          "CARs and CLs block advancement; FARs carry forward to the next audit. The owner responds; only the auditor may close.",
-          "The audit also records a check that the project is not registered on any other registry.",
+          "The auditor grades each desk section Pass, CAR or CL. An ungraded section blocks the report.",
+          "CARs and CLs block until closed; FARs roll forward to the next audit. The owner responds, and the auditor alone closes.",
+          "The audit also logs a check against other registries for a duplicate registration.",
         ],
       },
       {
         heading: "Report gates",
         bullets: [
-          "Every section assessed · all CARs closed · all CLs resolved · site visit signed off · opinion set.",
-          "Approver sign-off — and the approver must not have worked on the audit team.",
-          "The signing lead must hold the Certified Auditor certification.",
-          "Issuing the report advances the stage; it mints nothing.",
+          "All sections graded, all CARs closed, all CLs resolved, the site visit signed, an opinion set.",
+          "An approver signs off, and that approver did no team work on the engagement.",
+          "The signing lead holds the Certified Auditor certification.",
+          "Issuing the report moves the project forward and mints nothing.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Notes",
         paras: [
-          "The escrowed auditor fee is released when the issued report is published — identically for any opinion, so an adverse opinion pays the same as a positive one.",
-          "The PVR receives no Operations compliance review — only the ERVR does. Accepted because registration mints nothing.",
+          "The escrow pays the auditor once the report publishes, whatever the opinion. An adverse finding earns the same fee as a clean one.",
+          "The PVR skips the Operations compliance review; the ERVR alone gets one. The design accepts this because registration mints nothing.",
         ],
       },
     ],
   },
 
   b5: {
-    title: "Registration decision",
+    title: "The registration decision",
     stage: "S6",
     actorLabel: "Steering Committee",
-    tagline: "Approve → REGISTERED, crediting period fixed. Still zero credits.",
+    tagline: "Approval registers the project and fixes its crediting window.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Steering members vote; the decision requires the configured quorum and is finalized by the Chair. A member with a declared interest in the project is excluded, and the exclusion is recorded. Every decision writes an append-only log entry containing outcome, rationale and the evidence gates that permitted it.",
+          "Steering members vote, quorum applies, and the Chair finalizes. A member with a declared interest sits out, and the record shows the exclusion. Each decision lands in an append-only log with outcome, rationale and the gates that allowed it.",
         ],
       },
       {
         heading: "On approval",
         bullets: [
-          "The project becomes REGISTERED.",
-          "The crediting period is fixed — a project without one cannot enter monitoring.",
-          "No credits are created at registration.",
+          "The platform marks the project REGISTERED.",
+          "The crediting period locks. A project without one cannot enter monitoring.",
+          "Credits created: zero.",
         ],
       },
       {
         heading: "On rejection",
-        paras: ["The project returns to submission with notes."],
+        paras: ["The plan goes back to the owner with notes."],
       },
     ],
   },
 
   b5n: {
-    title: "Why no credits exist yet",
-    tagline: "Registration credits nothing, because nothing has been measured.",
+    title: "Zero credits at registration",
+    tagline: "Nothing measured yet, so nothing credited.",
     sections: [
       {
         paras: [
-          "The ex-ante estimate in the PSF is a plausibility reference, never an entitlement — crediting it would mean issuing retirable permits against a forecast, and a retired credit cannot be recalled when the forecast proves wrong.",
-          "The estimate carries no balance behind it, and the issuance machinery cannot read it. Exactly one document — the ERVR, written later by the second auditor — may carry a verified quantity, and it is the only number the mint reads.",
-          "Where an issuance for a period materially exceeds the pro-rata ex-ante estimate, the verification workspace raises an automatic flag for the auditor to address in the ERVR.",
+          "The ex-ante estimate in the PSF is a plausibility reference. Crediting it would mean issuing retirable permits against a forecast, and no one can recall a retired credit when the forecast breaks.",
+          "The estimate carries no balance, and the issuance machinery cannot read the field. One document, the ERVR, may carry a verified quantity, and the mint reads that number and no other.",
+          "An issuance far past the pro-rata estimate trips an automatic flag, and the auditor addresses the gap in the ERVR.",
         ],
       },
     ],
@@ -542,203 +536,199 @@ export const CONTENT: Record<string, ContentEntry> = {
   /* ------------------------------------------------------------------ */
 
   b6: {
-    title: "Monitoring & the PMR",
+    title: "Monitoring and the PMR",
     stage: "S7",
     actorLabel: "Project Owning Firm",
-    tagline: "Operate, measure, report — the claim for period n.",
+    tagline: "The owner operates, measures, and files the claim for period n.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "For each monitoring period n, the owner operates the activity, measures against the monitoring plan, and submits the Project Monitoring Report: period boundaries, measured parameters, raw evidence, the claimed reductions and their calculation, deviations, and responses to carried-forward FARs. PMR attestation is performed by a named user.",
+          "For each monitoring period the owner runs the activity, measures against the monitoring plan, and files the Project Monitoring Report: period boundaries, measured parameters, raw evidence, the claimed reductions with their calculation, deviations, and answers to rolled-forward FARs. A named user signs the filing.",
         ],
       },
       {
-        heading: "Exit condition",
+        heading: "Exit",
         bullets: [
-          "PMR and evidence submitted.",
-          "The verification fee is held in escrow.",
+          "PMR and evidence filed.",
+          "Verification fee sitting in escrow.",
         ],
       },
       {
         heading: "Period rules",
         bullets: [
-          "Every monitoring period must fall entirely within the crediting period.",
-          "Periods must not overlap; gaps are permitted and earn nothing.",
-          "A period may be issued at most once, ever.",
+          "Each period sits whole inside the crediting period.",
+          "Periods never overlap. Gaps earn nothing.",
+          "Each period mints at most once, ever.",
         ],
       },
     ],
   },
 
   b6a: {
-    title: "Second seeded draw — Auditor A excluded",
+    title: "The second draw excludes Auditor A",
     stage: "S8",
     actorLabel: "Automatic draw → Steering selects",
-    tagline: "B ≠ A is impossible by construction, not merely checked.",
+    tagline: "The pool drops the validator before the draw runs.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Assignment runs exactly as before — a randomly drawn shortlist, Steering selects one with a public reason — with one difference: the institution that validated the project is removed from the eligible pool before the draw, so the draw cannot produce Auditor A.",
+          "Assignment repeats the earlier pattern, a random shortlist and a public pick, with one change: the platform removes the validating institution from the pool before the draw. A draw over that pool cannot produce Auditor A.",
         ],
       },
       {
-        heading: "Enforced three times",
+        heading: "Enforcement",
         bullets: [
-          "At pool construction — the draw cannot select the validator.",
+          "At pool construction: the draw cannot select the validator.",
           "In the database.",
-          "On-chain — the registry contract refuses to record a verification engagement for the VVB that validated the project.",
+          "On-chain: the registry contract rejects a verification engagement for the firm that validated the project.",
         ],
       },
       {
-        heading: "Why it matters",
+        heading: "The point",
         paras: [
-          "This is rule 1 made operational: the party that audits a project's design is never the party that audits its performance. The auditor who approved the design has an interest in the design looking right; the performance recalculation must come from someone without that stake.",
+          "Rule 1 runs through this box. The firm that approved the design holds a stake in the design looking right, so the recalculation has to come from a firm without that stake.",
         ],
       },
     ],
   },
 
   b7: {
-    title: "Performance verification — the ERVR",
+    title: "The performance audit (ERVR)",
     stage: "S9",
     actorLabel: "Auditor B · signed by a Certified Creditor",
-    tagline: "The recalculation that becomes the minted quantity.",
+    tagline: "Auditor B recalculates the number the mint will copy.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Auditor B, led by a Certified Creditor, recalculates the reductions from evidence — never from the owner's claim. The ERVR states the verified quantity as BE − PE − LE (baseline minus project minus leakage emissions), each term given separately in tonnes of CO₂-equivalent, together with the greenhouse-gas conversion table (GWP set) the pinned methodology requires; where gases other than CO₂ are involved, the per-gas conversion is shown.",
+          "Auditor B, under a Certified Creditor lead, rebuilds the reductions from evidence rather than from the owner's claim. The ERVR states the verified quantity as BE − PE − LE (baseline minus project minus leakage emissions), each term in tonnes of CO₂-equivalent, plus the greenhouse-gas conversion table (GWP set) the pinned methodology requires. Gases other than CO₂ get a per-gas conversion line.",
         ],
       },
       {
         heading: "In the workspace",
         bullets: [
-          "Claimed figures are displayed beside editable verified values; the gap is computed live against a ±5% materiality threshold.",
-          "The recommended quantity is derived from verified values only.",
-          "An issuance materially above the pro-rata ex-ante estimate raises an automatic flag to address in the report.",
-          "Same gates as validation: sections, findings, site visit, approver — and the signing lead must hold the Certified Creditor certification.",
+          "Claimed figures sit beside editable verified values, and the workspace computes the gap live against a ±5% materiality threshold.",
+          "Verified values alone feed the recommended quantity.",
+          "An issuance far above the pro-rata estimate trips a flag the report must address.",
+          "The validation gates repeat here: sections, findings, site visit, approver, and a Certified Creditor as signing lead.",
         ],
       },
       {
-        heading: "Why this number is special",
+        heading: "The number",
         bullets: [
-          "The verified quantity exists on the ERVR only — the PSF, PMR and PVR have no such field, and the mint reads no other source.",
+          "The verified quantity lives on the ERVR alone. The PSF, PMR and PVR carry no such field, and the mint reads no other source.",
           "The claimed-vs-verified gap posts to the public per-VVB statistics page.",
-          "Escrow releases the auditor's fee when the report is published — before any committee has seen anything, and identically for an adverse opinion.",
+          "The escrow pays Auditor B when the report publishes, before any committee reads it, adverse opinion or not.",
         ],
       },
       {
-        heading: "Honest limit",
+        heading: "Limits",
         paras: [
-          "The platform checks the arithmetic identity and the GWP-set match; it does not compute BE, PE or LE and has no methodology-as-code engine. The derivation of each term is the Certified Creditor's work under the methodology — its correctness is what the audit, not the software, vouches for.",
+          "The platform checks the arithmetic and the GWP match. It computes no BE, PE or LE and runs no methodology engine; the Certified Creditor derives each term. The audit vouches for the derivation, and the software vouches for the arithmetic.",
         ],
       },
     ],
   },
 
   b8: {
-    title: "Compliance review",
+    title: "The compliance review",
     stage: "S10",
     actorLabel: "Operations",
-    tagline: "Automated pre-checks a human cannot waive, then a bounded judgment checklist.",
+    tagline: "Machine checks first, bounded judgment second.",
     sections: [
       {
-        heading: "Automated pre-checks first",
+        heading: "The machine checks",
         bullets: [
-          "ERVR issued by the assigned Auditor B and signed by a Certified Creditor.",
+          "The assigned Auditor B issued the ERVR, and a Certified Creditor signed it.",
           "All report gates passed.",
-          "Period within the crediting period, non-overlapping, not already issued.",
-          "Verified quantity present and equal to BE − PE − LE as decomposed on the report.",
-          "GWP set stated and matching the pinned methodology.",
-          "Materiality gap documented; carried-forward FARs addressed.",
-          "A failing pre-check blocks the stage and is not overridable by any human.",
+          "The period sits inside the crediting window, overlaps nothing, and has no prior issuance.",
+          "The verified quantity exists and equals BE − PE − LE as decomposed on the report.",
+          "The stated GWP set matches the pinned methodology.",
+          "The materiality gap has documentation, and rolled-forward FARs have answers.",
+          "A failed check blocks the stage, and no person can wave it through.",
         ],
       },
       {
-        heading: "Then the judgment checklist",
+        heading: "The judgment checklist",
         paras: [
-          "Only what a machine cannot decide: does the ERVR narrative support the quantity, are monitoring-plan deviations explained, and is anything anomalous against prior periods or the ex-ante reference?",
+          "Operations then answers the questions no machine can: does the ERVR narrative support the quantity, do the deviation explanations hold, and does anything look off against prior periods or the ex-ante reference.",
         ],
       },
       {
-        heading: "Return, not reject",
+        heading: "The return path",
         paras: [
-          "Operations may send the ERVR back to Auditor B with notes, or pass it to Steering. It cannot approve issuance, alter a quantity, close a finding, or edit any audit artifact. The Steering decision screen then displays the review outcome, the count of consultation comments, and how many became findings.",
+          "Operations sends the ERVR back to Auditor B with notes, or passes it to Steering. It approves nothing, alters no quantity, closes no finding, edits no artifact. The Steering screen then shows the review outcome, the comment count, and how many comments became findings.",
         ],
       },
     ],
   },
 
   b9: {
-    title: "Issuance decision",
+    title: "The issuance decision",
     stage: "S11",
     actorLabel: "Steering · Creditor Committee members only",
-    tagline: "A binary decision — the quantity is not on the table.",
+    tagline: "A yes or no. The quantity stays off the table.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Issuance is voted only by Steering members holding the Creditor Committee role, with their own quorum, finalized by the Chair. The decision is yes / no only: the quantity minted is the ERVR's verified quantity, and no override path exists. A member with a declared interest is excluded, recorded; the decision writes an append-only log entry.",
+          "Creditor Committee members alone vote, under their own quorum, and the Chair finalizes. The vote is binary: the mint takes the ERVR's verified quantity, and no override path exists. A member with a declared interest sits out, on the record. The decision lands in the append-only log.",
         ],
       },
       {
         heading: "On approval",
         paras: [
-          "The system generates the issuance packet and the project enters the Competent Authority's queue. Nothing is minted in this state.",
+          "The system builds the issuance packet and queues it for the Competent Authority. The mint stays idle at this point.",
         ],
       },
       {
         heading: "On rejection",
-        paras: ["The project returns to monitoring."],
+        paras: ["The project drops back to monitoring."],
       },
       {
-        heading: "Worth knowing",
+        heading: "Notes",
         paras: [
-          "Note the name: this is the Creditor Committee — a Steering subset — not the “Certified Creditor”, which is a person role inside a VVB. Because the subset is smaller than the full committee, issuance rests on fewer people than registration; the appointment and rotation charter that would justify that is not yet written.",
+          "Two similar names, two different things: the Creditor Committee is a Steering subset, while a Certified Creditor works inside a VVB. And since the subset is smaller than the full committee, fewer people decide issuance than registration; a charter for appointing and rotating them has yet to exist.",
         ],
       },
     ],
   },
 
   "JaASU19LGJu8xGfdlSRQ-6": {
-    title: "Authorization — the MoECC gate",
+    title: "The MoECC gate",
     stage: "S11b",
     actorLabel: "Competent Authority · Authorizing Officer",
-    tagline: "A state actor's key between the committee and the mint.",
+    tagline: "A ministry key stands between the committee and the mint.",
     sections: [
       {
         heading: "The issuance packet",
         paras: [
-          "Generated the moment the issuance decision is approved: a canonical data file plus a rendered PDF bundling the project identity and methodology pin, fingerprints of all four documents and their public-ledger anchors, the verified quantity with its BE/PE/LE components and GWP set, the auditors' identities with accreditation records, the consultation summary, both decisions with votes, and the compliance-review outcome. Immutable, anchored, and exportable so it can be filed with any system the ministry later adopts.",
+          "The moment the committee approves, the system builds the packet: a canonical data file plus a rendered PDF holding the project identity and methodology pin, fingerprints of all four documents with their ledger anchors, the verified quantity with its BE/PE/LE terms and GWP set, the auditors' identities and accreditation records, the consultation summary, both decisions with votes, and the compliance outcome. The packet never changes after generation, carries its own anchor, and exports whole for any system the ministry adopts later.",
         ],
       },
       {
-        heading: "Exactly one outcome per packet",
+        heading: "One outcome per packet",
         bullets: [
-          "CONFIRMED — signed with the authority's own key and recorded on-chain. The key lives in the ministry's own hardware, never on the platform host.",
-          "REFUSED — with a reason, recorded on-chain. The record is append-only.",
-          "No auto-confirm on elapsed time, and no auto-refuse: silence is neither.",
+          "CONFIRMED: the Authorizing Officer signs with the ministry's own key, and the ledger records it. The key lives in ministry hardware, off the platform host.",
+          "REFUSED: the officer states a reason, and the ledger records that. The record appends and nothing overwrites it.",
+          "Elapsed time confirms nothing and refuses nothing.",
         ],
       },
       {
         heading: "On refusal",
         paras: [
-          "The project returns to the issuance decision with the reason visible to Steering and the owner. Steering may withdraw its decision (project returns to monitoring with notes) or resubmit the packet once with additional information; a second refusal ends the period's issuance path.",
+          "The project returns to the committee with the reason in view of Steering and the owner. Steering may withdraw its decision, sending the project back to monitoring with notes, or resubmit the packet once with more information. A second refusal closes the period's path to issuance.",
         ],
       },
       {
-        heading: "Visible, not enforceable",
+        heading: "The queue",
         paras: [
-          "The authority's queue publicly shows every pending packet and the days elapsed since its generation (the overdue threshold is still to be set). The delay is visible; the platform has no lever over a ministry.",
+          "The ministry's queue sits on the public record, each pending packet beside its days of waiting (the overdue threshold has no set value yet). You can see a delay; the platform cannot shorten one.",
         ],
       },
       {
-        heading: "Honest limits",
+        heading: "Limits",
         paras: [
-          "This is a product gate, not a legal act: no enabling law or decree currently gives the ministry a statutory role in confirming project-level credits, no international registry adjustment is made, and the confirmation is not Article 6 host-country authorization — the public label says so.",
-          "Every issuance now waits on a state ministry — stricter than any comparable program, and it makes issuance throughput a property of the ministry's process, not of the software.",
+          "A product gate. Qatar has no law or decree that hands the ministry this role, the record adjusts no international registry, and the confirmation is not Article 6 host-country authorization. The public label states this.",
+          "Each issuance now waits on a ministry, a stricter bar than comparable programs set, and it ties issuance speed to the ministry's process rather than to the software.",
         ],
       },
     ],
@@ -747,35 +737,35 @@ export const CONTENT: Record<string, ContentEntry> = {
   b10: {
     title: "Credits minted",
     stage: "S12",
-    actorLabel: "Automatic — the Registry binding",
-    tagline: "Exactly the ERVR number. Nobody with a login can do this.",
+    actorLabel: "Automatic, via the Registry binding",
+    tagline: "The ERVR number, serialised. No login can trigger this.",
     sections: [
       {
-        heading: "What must exist first — all three, for the same period",
+        heading: "Required first, all for one period",
         bullets: [
           "A published ERVR.",
           "An approved issuance decision.",
           "A CONFIRMED authorization record.",
-          "Each recorded on the public ledger; the token contract mints only when the committee's threshold signatures and the authority's signature both exist — never on the platform's own key alone, and never on either one alone.",
+          "Each sits on the public ledger, and the token contract requires the committee's threshold signatures plus the ministry's signature. The platform's own key opens nothing alone.",
         ],
       },
       {
-        heading: "What the mint does",
+        heading: "The mint",
         bullets: [
-          "Quantity minted equals the verified quantity in the ERVR — the issuance job takes no quantity parameter, and no override path exists.",
-          "Serial ranges are globally unique, non-reusable, and carry the project id and vintage (the monitoring period the credits were earned in).",
-          "A monitoring period may produce at most one issuance, ever — enforced on the period record and again on-chain.",
-          "For activity classes with reversal risk (say, a forest that could burn), a published flat percentage of the issuance is set aside in a buffer account; the remainder goes to the owner. The split happens at allocation — the mint itself still equals the ERVR quantity exactly.",
+          "The minted quantity copies the ERVR's verified quantity. The job takes no quantity argument, and no override path exists.",
+          "Serial ranges stay unique for good and carry the project id and vintage, the period the credits came from.",
+          "One issuance per period. The period record enforces it, and the chain enforces it again.",
+          "Activity classes with reversal risk, a forest that could burn, give up a published flat share to a buffer account at mint; the rest lands with the owner. The split happens at allocation, and the mint itself still matches the ERVR to the tonne.",
         ],
       },
       {
-        heading: "Afterwards",
-        paras: ["The project returns to monitoring for period n+1."],
+        heading: "After",
+        paras: ["The project heads back to monitoring for period n+1."],
       },
       {
-        heading: "Worth knowing",
+        heading: "Limits",
         paras: [
-          "The buffer only accumulates for now — there is no clawback or cancellation logic yet, so reversal cover is accounting, not yet insurance.",
+          "The buffer grows and does nothing else so far. No clawback logic exists, so the cover amounts to accounting rather than insurance.",
         ],
       },
     ],
@@ -786,20 +776,19 @@ export const CONTENT: Record<string, ContentEntry> = {
   /* ------------------------------------------------------------------ */
 
   b11: {
-    title: "Owner holds them",
+    title: "The owner holds them",
     actorLabel: "Project Owning Firm",
-    tagline: "Credits live in accounts — and only owner-firm accounts have balances.",
+    tagline: "Credits sit in accounts, and owner accounts alone carry balances.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Minted credits are credited to the owner firm's account as HELD units. Every institution has an account, but only Project Owning Firm accounts may hold, transfer or retire; auditor, Steering, Operations and Competent Authority accounts are permanently zero-balance.",
+          "The mint credits the owner firm's account with HELD units. Each institution has an account, and the platform keeps auditor, Steering, Operations and ministry balances at zero.",
         ],
       },
       {
-        heading: "One balance, never two",
+        heading: "One balance",
         paras: [
-          "Once a unit is minted, the blockchain is authoritative for it and the database holding record becomes a mirror. One authoritative balance — the double-spend path this product exists to prevent appears the moment credits exist in two places at once.",
+          "After the mint, the blockchain owns the truth about a unit and the database mirrors it. Two authoritative balances would open the double-spend path this product exists to shut.",
         ],
       },
     ],
@@ -808,72 +797,71 @@ export const CONTENT: Record<string, ContentEntry> = {
   b12: {
     title: "Carbon Market",
     actorLabel: "Account holders",
-    tagline: "Deliberately venue-neutral — the trading venue is still an open decision.",
+    tagline: "Firms trade with firms today. The venue question stays open.",
     sections: [
       {
-        heading: "What works today",
+        heading: "Live today",
         paras: [
-          "Trading is firm-to-firm transfer: a transfer moves a serial range between accounts and appends to ownership history; partial ranges may be split. Only HELD units may be transferred. Real payment processing is out of scope for now — the fee and escrow mechanics run on test-mode money.",
+          "A transfer moves a serial range between owner accounts and appends to the ownership history; ranges split as needed. HELD units alone may move. Payment rails sit out of scope for now, so fees and escrow run on test-mode money.",
         ],
       },
       {
         heading: "The open decision",
         bullets: [
-          "Option A — internal marketplace: an escrow order book where credits and payment swap atomically. Deliberately not an automated market maker: pooling means treating unlike tonnes as interchangeable, which is the quality laundering this product exists to prevent.",
-          "Option B — external venue: an export boundary that locks a unit locally the moment it leaves, so it cannot be spent twice across the seam.",
+          "Option A, an internal marketplace: an escrow order book where credits and payment swap in one atomic step. No automated market maker, since pooling treats unlike tonnes as alike, the quality laundering this product exists to prevent.",
+          "Option B, an external venue: an export boundary that locks a unit at home the moment it leaves, closing the double-spend across the seam.",
         ],
       },
       {
-        heading: "Worth knowing",
+        heading: "Notes",
         paras: [
-          "Only Project Owning Firms may hold credits, so a dedicated buyer institution comes later. Eligibility labels on listings render as “Not assessed” — never omitted, never implied.",
+          "Owner firms alone hold credits for now; a dedicated buyer institution comes later. Listings show eligibility labels as “Not assessed”, spelled out rather than dropped.",
         ],
       },
     ],
   },
 
   b13: {
-    title: "Retired — permanent",
+    title: "Retired, for good",
     actorLabel: "Holding account",
-    tagline: "The only way a credit is ever used up. There is no way back.",
+    tagline: "A credit gets used once.",
     sections: [
       {
-        heading: "What happens",
         paras: [
-          "Retirement records the beneficiary (a free-text name, so retiring on behalf of a third party is meaningful), the reason and the timestamp, and generates a certificate with a verifiable id.",
+          "Retirement books the beneficiary (free text, so retiring for a third party carries their name), the reason and the timestamp, and issues a certificate with a verifiable id.",
         ],
       },
       {
-        heading: "Why it is irreversible",
+        heading: "No way back",
         bullets: [
-          "RETIRED units are immutable and non-transferable — enforced at the database level, not only in application code.",
-          "Nothing is ever hard-deleted; states are appended, never overwritten.",
-          "On-chain, retirement burns the tokens and mints a non-transferable certificate in the same transaction — a certificate exists if and only if a burn occurred.",
-          "The token contract cannot be upgraded: no admin mint, no rescue function, no pause on retirement, no path back.",
+          "The database locks RETIRED units against change and transfer; application code gets no vote.",
+          "The ledger appends and deletes nothing.",
+          "On-chain, one transaction burns the tokens and mints a non-transferable certificate. A certificate without a burn cannot exist.",
+          "The token contract accepts no upgrades: no admin mint, no rescue hook, no pause switch, no reverse path.",
         ],
       },
     ],
   },
 
   b14: {
-    title: "Public lookup — no login",
+    title: "Public lookup, no login",
     actorLabel: "Anyone",
-    tagline: "The whole pipeline is checkable from outside.",
+    tagline: "You can check the pipeline from outside, without an account.",
     sections: [
       {
-        heading: "What anyone can see",
+        heading: "Open to anyone",
         bullets: [
-          "Serial lookup: any serial resolves to its project, vintage, current state and, if retired, its retirement record.",
-          "The public project page: pinned methodology, stage, every consultation comment with the auditor's response, issued reports, issuance history.",
-          "Per-VVB statistics: engagements, opinions issued, the average claimed-vs-verified gap, and how often each VVB was shortlisted versus selected — computed live, never cached.",
-          "Every engagement's draw: seed commitment, pool snapshot, shortlist, selection and public reason — the shortlist is recomputable by anyone.",
-          "The authority's queue: every pending issuance packet and the days it has waited.",
+          "Type a serial and get its project, vintage, current state and, for a retired unit, its retirement record.",
+          "Open a project page and read the pinned methodology, the stage, each comment with the auditor's answer, the reports, and the issuance history.",
+          "Read per-VVB statistics: engagements, opinions, the average claimed-vs-verified gap, and shortlisted-vs-picked counts, computed at read time with no cache.",
+          "Recompute any shortlist from its seed commitment, pool snapshot and stored result.",
+          "Watch the ministry's queue: each pending packet and its days of waiting.",
         ],
       },
       {
         heading: "Honest labels",
         paras: [
-          "Eligibility labels (CORSIA, Article 6) render as “Not assessed” with an explanatory note — not omitted, not implied. The MoECC confirmation is shown as its own label, with date and ledger anchor, and is never rendered as, or next to, Article 6 authorization or CORSIA eligibility.",
+          "Eligibility labels (CORSIA, Article 6) read “Not assessed”, with a note, in place rather than dropped. The MoECC confirmation gets its own label with date and ledger anchor, and the site keeps it apart from Article 6 and CORSIA claims, so a product gate never reads as a legal one.",
         ],
       },
     ],
@@ -885,90 +873,90 @@ export const CONTENT: Record<string, ContentEntry> = {
 
   tr: {
     title: "The three rules",
-    tagline: "The product's central assertion, printed on the diagram and kept true in code.",
+    tagline: "The claims the product keeps true in code.",
     sections: [
       {
         paras: [
-          "The auditor recommends, the committee decides, the authority confirms, the system mints. No institution performs another's step, and no credit exists without an independent audit, a recorded decision and a state confirmation.",
-          "Positioning, in one sentence: incumbents ask the market to trust one company's integrity; 2C2MRV makes the separation of roles independently checkable.",
+          "The auditor recommends, the committee decides, the authority confirms, the system mints. No institution performs another's step, and a credit requires an independent audit, a recorded decision and a state confirmation before it exists.",
+          "Incumbent registries ask the market to trust one company's integrity. 2C2MRV lets anyone check the separation of roles.",
         ],
       },
     ],
   },
 
   tr1: {
-    title: "Rule 1 — Design auditor ≠ performance auditor",
-    tagline: "Separation of duties at institution level, enforced three ways.",
+    title: "Rule 1: two different auditors",
+    tagline: "The design auditor never audits performance.",
     sections: [
       {
         heading: "The rule",
         paras: [
-          "The party that audits a project's design is never the party that audits its performance — Certified Auditor versus Certified Creditor, at institution level. A person may hold both certifications; the institution that validated a project still never verifies it.",
+          "The firm that audits a project's design never audits its performance: Certified Auditor versus Certified Creditor, split at institution level. One person may hold both certifications; the firm that validated still cannot verify.",
         ],
       },
       {
-        heading: "How it is enforced",
+        heading: "Enforcement",
         bullets: [
           "At pool construction: the verification draw cannot produce the validator.",
           "In the database.",
-          "On-chain: the registry contract refuses to record a verification engagement for the project's validator.",
+          "On-chain: the registry contract rejects a verification engagement for the project's validator.",
         ],
       },
       {
-        heading: "And inside each audit",
+        heading: "Inside each audit",
         paras: [
-          "The approver who signs off a report must not have worked on that engagement's audit team, and the signing lead must hold the certification the phase requires — Certified Auditor for a PVR, Certified Creditor for an ERVR.",
+          "The approver who signs a report did no team work on the engagement, and the signing lead holds the certification the phase demands: Certified Auditor for a PVR, Certified Creditor for an ERVR.",
         ],
       },
     ],
   },
 
   tr2: {
-    title: "Rule 2 — The quantity is a checked recalculation",
-    tagline: "“Issuance based on certified equations”, implemented as a hard identity check.",
+    title: "Rule 2: a checked recalculation",
+    tagline: "The minted number has to sum in the methodology's own terms.",
     sections: [
       {
         heading: "The rule",
         paras: [
-          "The issued quantity is the Certified Creditor's recalculation, decomposed into the methodology's own terms — verified quantity = BE − PE − LE, each term in tonnes of CO₂-equivalent, under the greenhouse-gas conversion table (GWP set) the pinned methodology requires; where gases other than CO₂ are involved, the per-gas conversion is shown.",
+          "The issued quantity is the Certified Creditor's recalculation, broken into the methodology's own terms: verified quantity = BE − PE − LE, each term in tonnes of CO₂-equivalent, under the GWP set the pinned methodology names. Gases other than CO₂ get per-gas conversion lines.",
         ],
       },
       {
         heading: "The check",
         paras: [
-          "The platform verifies the identity and the GWP-set match as a hard pre-check and rejects an ERVR that fails it — before Operations or any committee sees it. The verified quantity exists on the ERVR only, and the mint reads no other source.",
+          "The platform verifies the sum and the GWP match as a hard pre-check and bounces a failing ERVR before Operations or any committee reads it. The verified quantity lives on the ERVR alone, and the mint reads no other source.",
         ],
       },
       {
-        heading: "Honest limit",
+        heading: "Limits",
         paras: [
-          "The platform does not compute BE, PE or LE and has no methodology-as-code engine. It confirms the stated terms sum and the GWP set matches; it cannot detect a wrong emission factor or an inflated baseline — that remains the Certified Creditor's work, and presenting this check as automated quantification would overstate the control.",
+          "The platform computes no BE, PE or LE and runs no methodology engine. It confirms the terms sum and the table matches; a wrong emission factor or an inflated baseline slips past arithmetic, and catching those stays the Certified Creditor's job. Selling this check as automated quantification would oversell it.",
         ],
       },
     ],
   },
 
   tr3: {
-    title: "Rule 3 — No person mints; everything is published",
-    tagline: "Tamper-evident by construction — and honest about what that does not mean.",
+    title: "Rule 3: no hand on the mint",
+    tagline: "No person mints, and the record sits in public.",
     sections: [
       {
-        heading: "No person can mint or un-retire",
+        heading: "The mint",
         paras: [
-          "The permission to create or destroy credits binds to a locked “Registry” system role that no account can ever be given, so nobody with a login can create supply. On-chain, minting requires the Creditor Committee's threshold signatures and the Competent Authority's key — never the platform's own key alone. Retirement is terminal: no admin mint, no rescue function, no path back.",
+          "Mint and burn permissions bind to a reserved Registry role that no account can receive, so no login creates supply. On-chain, a mint demands the Creditor Committee's threshold signatures plus the ministry's key; the platform's own key moves nothing alone. Retirement ends a credit: no admin mint, no rescue hook, no path back.",
         ],
       },
       {
-        heading: "Everything is published",
+        heading: "The record",
         paras: [
-          "From the first release, every submission, report, decision, compliance outcome and consultation close is fingerprinted and anchored to a public ledger, with the transaction hash displayed on the artifact; publishing runs through a queue so the product keeps working even when the chain does not. Once minted, the credits themselves live on-chain and the database becomes a mirror.",
+          "From the first release, the platform fingerprints each submission, report, decision, compliance outcome and comment-set close, anchors the fingerprint to a public ledger, and prints the transaction hash on the artifact. Publishing runs through a queue, so a dead chain leaves the product working. After a mint, the credits themselves live on-chain and the database mirrors them.",
         ],
       },
       {
-        heading: "Honest claims only",
+        heading: "Claims that hold",
         paras: [
-          "Two claims are true and used: publicly verifiable and tamper-evident. Three would be false under a platform-operated relayer and a permissioned committee, and are not used: immutable, trustless, decentralised.",
-          "The chain cannot verify a tonne, make a captured auditor honest, or make an inflated baseline true. Over-crediting is prevented off-chain — separation of duties, blocking findings, the ±5% materiality threshold, the independent approver. The contracts prevent a narrower and still valuable set: double issuance of a period, forged retirement, silent revision of a decision, and undetectable tampering with a report.",
+          "Two claims hold and get used: verifiable by anyone, and tamper-evident. Three would break under a platform-run relayer and a permissioned committee, and stay unused: immutable, trustless, decentralised.",
+          "A chain verifies no tonnes. It cannot make a captured auditor honest or an inflated baseline true; separation of duties, blocking findings, the ±5% threshold and the independent approver carry that load off-chain. The contracts stop a narrower set worth stopping: double issuance of a period, forged retirement, silent revision of a decision, and quiet edits to a report.",
         ],
       },
     ],
