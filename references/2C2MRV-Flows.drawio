@@ -1,0 +1,303 @@
+<mxfile host="Electron" agent="Claude" pages="2">
+  <diagram name="Business flow" id="biz-flow-01">
+    <mxGraphModel dx="1523" dy="1135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bt" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=left;" value="How a carbon credit is born, sold, and used" vertex="1">
+          <mxGeometry height="36" width="800" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bs" parent="1" style="text;html=1;fontSize=12;fontColor=#666666;align=left;" value="Five organisations. The auditor recommends, the committee decides, the authority confirms, the system mints." vertex="1">
+          <mxGeometry height="24" width="800" x="40" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1" parent="1" style="rounded=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Project Owner" vertex="1">
+          <mxGeometry height="28" width="130" x="1060" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" parent="1" style="rounded=1;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Auditor (VVB)" vertex="1">
+          <mxGeometry height="28" width="130" x="1200" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" parent="1" style="rounded=1;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" value="Steering Committee" vertex="1">
+          <mxGeometry height="28" width="130" x="1340" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lg6" parent="1" style="rounded=1;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Competent Authority (MoECC)" vertex="1">
+          <mxGeometry height="28" width="170" x="1020" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lg4" parent="1" style="rounded=1;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Operations" vertex="1">
+          <mxGeometry height="28" width="130" x="1200" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lg5" parent="1" style="rounded=1;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Automatic" vertex="1">
+          <mxGeometry height="28" width="130" x="1340" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1" parent="1" style="text;html=1;fontSize=13;fontStyle=1;align=left;fontColor=#333333;" value="1 · REGISTER THE PROJECT" vertex="1">
+          <mxGeometry height="24" width="180" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Owner submits the&#xa;project plan (PSF)" vertex="1">
+          <mxGeometry height="60" width="170" x="40" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="b1a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="Completeness check —&#xa;presence &amp; schema only,&#xa;not a judgment" vertex="1">
+          <mxGeometry height="60" width="170" x="245" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="Public can comment&#xa;for a fixed window" vertex="1">
+          <mxGeometry height="60" width="170" x="450" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Seeded draw shortlists&#xa;eligible auditors;&#xa;Committee selects one&#xa;with a public reason" vertex="1">
+          <mxGeometry height="76" width="180" x="655" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Auditor A (Certified Auditor)&lt;br&gt;checks the design,&lt;br&gt;answers every comment,&lt;br&gt;issues the PVR:&lt;br&gt;recommend yes / no" vertex="1">
+          <mxGeometry height="88" width="190" x="870" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1" value="Committee decides:&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;project REGISTERED —&lt;br&gt;crediting period fixed&lt;/span&gt;" vertex="1">
+          <mxGeometry height="68" width="170" x="1095" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="b5n" parent="1" style="text;html=1;fontSize=11;fontColor=#b85450;align=right;" value="No credits exist yet&amp;nbsp;" vertex="1">
+          <mxGeometry height="28" width="180" x="900" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2" parent="1" style="text;html=1;fontSize=13;fontStyle=1;align=left;fontColor=#333333;" value="2 · EARN CREDITS" vertex="1">
+          <mxGeometry height="24" width="130" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Owner operates, measures,&#xa;reports the results (PMR)" vertex="1">
+          <mxGeometry height="60" width="180" x="40" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="b6a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Second seeded draw —&#xa;auditor A excluded;&#xa;Committee selects a&#xa;different auditor (B ≠ A)" vertex="1">
+          <mxGeometry height="76" width="180" x="250" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Auditor B (Certified Creditor)&lt;br&gt;recalculates from evidence,&lt;br&gt;issues the ERVR with the&lt;br&gt;verified quantity = BE − PE − LE" vertex="1">
+          <mxGeometry height="88" width="210" x="460" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="b8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Operations checks&#xa;the paperwork" vertex="1">
+          <mxGeometry height="60" width="160" x="695" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="b9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Steering&#39;s Creditor Committee&lt;br&gt;approves issuance&lt;br&gt;(yes / no only)" vertex="1">
+          <mxGeometry height="68" width="195" x="880" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="JaASU19LGJu8xGfdlSRQ-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" value="Competent Authority (MoECC):&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;confirms or refuses the issuance packet&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="68" width="200" x="1100" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="b10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" value="Credits minted —&#xa;exactly the ERVR number,&#xa;serialised, dated" vertex="1">
+          <mxGeometry height="60" width="175" x="1320" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3" parent="1" style="text;html=1;fontSize=13;fontStyle=1;align=left;fontColor=#333333;" value="3 · USE THE CREDITS" vertex="1">
+          <mxGeometry height="24" width="145" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="b11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Owner holds them" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="b12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=12;" value="Carbon Market" vertex="1">
+          <mxGeometry height="60" width="160" x="255" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="b13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#ffffff;fontSize=12;fontStyle=1" value="RETIRED against a named&#xa;beneficiary — permanent,&#xa;certificate issued" vertex="1">
+          <mxGeometry height="60" width="190" x="470" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="b14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="Anyone can look up any credit&#xa;by serial number — no login" vertex="1">
+          <mxGeometry height="60" width="200" x="705" y="436" as="geometry" />
+        </mxCell>
+        <mxCell id="docs" parent="1" style="text;html=1;fontSize=11;fontColor=#333333;align=left;" value="The four documents — claim, audit, claim, audit:&amp;nbsp;&amp;nbsp;PSF = owner&#39;s project plan&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;PVR = auditor A&#39;s design-audit report&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;PMR = owner&#39;s measured results&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;ERVR = auditor B&#39;s performance-audit report (carries the verified quantity)" vertex="1">
+          <mxGeometry height="22" width="1240" x="40" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="tr" parent="1" style="text;html=1;fontSize=13;fontStyle=1;align=left;" value="The three rules that make a credit trustworthy &amp;amp; distinguish us" vertex="1">
+          <mxGeometry height="24" width="500" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="tr1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="The party that audits a project&#39;s design is never the party that audits its performance — Certified Auditor vs Certified Creditor, at institution level." vertex="1">
+          <mxGeometry height="72" width="360" x="40" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="tr2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="The issued quantity is the Certified Creditor&#39;s recalculation — BE − PE − LE in tCO₂e under the pinned GWP set — checked for arithmetic consistency before any decision sees it." vertex="1">
+          <mxGeometry height="72" width="400" x="420" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="tr3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=12;" value="No person can mint or un-retire. Every report, decision and confirmation is published to a blockchain-based public ledger, tamper-evident." vertex="1">
+          <mxGeometry height="72" width="420" x="840" y="572" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="b1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b1a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1b" edge="1" parent="1" source="b1a" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="b2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="b3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.856;entryY=-0.034;labelBackgroundColor=#ffffff;fontSize=10;entryDx=0;entryDy=0;entryPerimeter=0;" target="b6" value="registered">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="246" />
+              <mxPoint x="194" y="246" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b6a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6b" edge="1" parent="1" source="b6a" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="b7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="b8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="b9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=10;" target="JaASU19LGJu8xGfdlSRQ-6" value="approved · issuance packet">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" x="0" y="-18" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JaASU19LGJu8xGfdlSRQ-8" edge="1" parent="1" source="JaASU19LGJu8xGfdlSRQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=10;" target="b10" value="confirmed">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" x="0" y="-18" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9r" edge="1" parent="1" source="JaASU19LGJu8xGfdlSRQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;labelBackgroundColor=#ffffff;fontSize=10;" target="b9" value="refused, with reason">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="258" />
+              <mxPoint x="978" y="258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="b10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;labelBackgroundColor=#ffffff;fontSize=10;" target="b6" value="next period">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1408" y="386" />
+              <mxPoint x="130" y="386" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="b10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;exitX=0.75;exitY=1;entryX=0.871;entryY=0.045;labelBackgroundColor=#ffffff;fontSize=10;entryDx=0;entryDy=0;entryPerimeter=0;" target="b11" value="credited to owner">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1451" y="416" />
+              <mxPoint x="180" y="416" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="b11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="b12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="b13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="b13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;" target="b14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Technical flow" id="tech-flow-01">
+    <mxGraphModel dx="2678" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tt" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=left;" value="Technical architecture" vertex="1">
+          <mxGeometry height="36" width="700" x="40" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" parent="1" style="swimlane;html=1;startSize=30;fillColor=#fbf5ff;strokeColor=#9673a6;fontStyle=1;fontSize=12;" value="LAYER 1 · INTERFACE — React Router v8, Framework Mode (Node 22+, Vite 7)" vertex="1">
+          <mxGeometry height="170" width="1420" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Owner workspace&#xa;PSF · PMR · findings inbox&#xa;holdings, transfer, retire" vertex="1">
+          <mxGeometry height="70" width="200" x="155" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Auditor workspace&#xa;desk review · findings ·&#xa;quantification · opinion · report" vertex="1">
+          <mxGeometry height="70" width="210" x="375" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" value="Committee workspace&lt;br&gt;decision packets" vertex="1">
+          <mxGeometry height="70" width="190" x="605" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i4" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Operations workspace&#xa;moderation · compliance review" vertex="1">
+          <mxGeometry height="70" width="210" x="815" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i5" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Public pages (no login)&#xa;project page · serial lookup ·&#xa;consultation comments" vertex="1">
+          <mxGeometry height="70" width="220" x="1045" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" style="swimlane;html=1;startSize=30;fillColor=#f0f7ff;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" value="LAYER 2 · API — FastAPI · PostgreSQL 16 (btree_gist) · Redis + ARQ · object storage" vertex="1">
+          <mxGeometry height="240" width="1420" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1" value="Authorization&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;institution → stage →&lt;br&gt;acted upon institution → permitted actions&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="205" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" value="Logic/State machines S1–S12&lt;br&gt;with an advance() function to move from 1 to another" vertex="1">
+          <mxGeometry height="70" width="240" x="465" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="L2" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;boundedLbl=1;" value="Postgres&lt;br&gt;saving serial ranges ·&lt;br&gt;append-only audit ·&amp;nbsp;decision logs" vertex="1">
+          <mxGeometry height="82" width="240" x="725" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="L2" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;boundedLbl=1;" value="Object storage&#xa;documents · evidence&#xa;(content hash in Postgres)" vertex="1">
+          <mxGeometry height="84" width="200" x="985" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Issuance job&lt;br&gt;reads decision + attested ERVR.&lt;div&gt;&lt;br&gt;Calling the minting smart contract&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="240" x="205" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" value="Publisher worker (ARQ)&#xa;outbox → canonical JSON → hash →&#xa;chain · single-concurrency (one nonce&#xa;owner) · product works if chain is down" vertex="1">
+          <mxGeometry height="90" width="260" x="465" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" value="Indexer worker (ARQ)&#xa;chain events → read model&#xa;mirror reconciliation vs balances" vertex="1">
+          <mxGeometry height="70" width="220" x="745" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#b85450;fontSize=11;" value="Redis&#xa;queues · cached read models only —&#xa;never gates, capabilities, stage state" vertex="1">
+          <mxGeometry height="70" width="230" x="985" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" parent="1" style="swimlane;html=1;startSize=30;fillColor=#f0fbff;strokeColor=#10739e;fontStyle=1;fontSize=12;" value="LAYER 3 · ON-CHAIN — Solidity + Foundry · Arbitrum testnet (settles to Ethereum)" vertex="1">
+          <mxGeometry height="200" width="1420" x="40" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;" value="SC-1 Registry&#xa;institutions · accreditation windows ·&#xa;projects · engagements&#xa;(verification reverts for the validator)" vertex="1">
+          <mxGeometry height="86" width="250" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;fontStyle=1" value="SC-2 Attestation&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;M1: anchor(hash) only →&lt;br&gt;M4: attestReport / attestDecision&lt;br&gt;THRESHOLD-SIGNED by Steering keys&lt;br&gt;sole mint authority&lt;/span&gt;" vertex="1">
+          <mxGeometry height="86" width="270" x="290" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;" value="SC-3 ACC Token — NOT upgradeable&#xa;ERC-1155 · class = (project, vintage, auth)&#xa;one mint per class, ever · no admin mint&#xa;retire() burns + calls SC-4 atomically" vertex="1">
+          <mxGeometry height="86" width="290" x="580" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;" value="SC-4 Certificate — NOT upgradeable&#xa;ERC-721 soulbound · callable only by SC-3&#xa;beneficiary · reason · quantity · serials" vertex="1">
+          <mxGeometry height="86" width="280" x="890" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="L3" style="text;html=1;whiteSpace=wrap;align=left;fontSize=11;fontColor=#10739e;" value="Chain-authoritative for the unit once&#xa;minted; DB becomes a mirror.&#xa;Publicly verifiable + tamper-evident —&#xa;not trustless, not decentralised" vertex="1">
+          <mxGeometry height="90" width="215" x="1190" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" parent="1" style="swimlane;html=1;startSize=30;fillColor=#fbfbfb;strokeColor=#666666;fontStyle=1;fontSize=12;" value="ETS INTERFACE — trading and retirement (venue: open decision D-2)" vertex="1">
+          <mxGeometry height="180" width="1420" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" parent="L4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" value="Eligibility gate&lt;br&gt;vintage · methodology ·&lt;br&gt;labels shown as NOT ASSESSED" vertex="1">
+          <mxGeometry height="80" width="250" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" parent="L4" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" value="Option A (internal): escrow order book&#xa;contract — atomic credit ↔ stablecoin&#xa;swap. NOT an AMM: pooling launders&#xa;quality across projects and vintages" vertex="1">
+          <mxGeometry height="80" width="290" x="290" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" parent="L4" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;" value="Option B (external venue):&#xa;export boundary — unit locked&#xa;TRANSFERRED_OUT locally so it&#xa;cannot be double-spent across the seam" vertex="1">
+          <mxGeometry height="80" width="290" x="600" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" parent="L4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#ffffff;fontSize=11;" value="Retirement — terminal&#xa;SC-3 burn → SC-4 certificate ·&#xa;serial lookup shows RETIRED forever" vertex="1">
+          <mxGeometry height="80" width="260" x="910" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="L1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="L2" value="HTTPS · session cookie&amp;nbsp;">
+          <mxGeometry relative="1" x="0.0222" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="L2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.35;exitY=1;entryX=0.35;entryY=0;" target="L3" value="outbox → publisher → contracts (web3.py, relayer key)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="L3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.65;exitY=0;entryX=0.65;entryY=1;" target="L2" value="events → indexer → read model">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="L3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="L4" value="transfer / retire settle on SC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JhhvtwFhPB2JVSXo5kZR-2" edge="1" parent="1" source="JhhvtwFhPB2JVSXo5kZR-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JhhvtwFhPB2JVSXo5kZR-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="&lt;div&gt;REQUEST -&amp;gt; Caddy Reverse-Proxy -&amp;gt;&lt;/div&gt;credits.ets-gcc.org" vertex="1">
+          <mxGeometry height="70" width="200" x="-200" y="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

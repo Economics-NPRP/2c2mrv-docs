@@ -1,0 +1,580 @@
+{
+  "version": "31.3.2",
+  "pages": [
+    {
+      "id": "biz-flow-01",
+      "name": "Business flow",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "bt",
+          "type": "node",
+          "parent": "1",
+          "label": "How a carbon credit is born, sold, and used"
+        },
+        {
+          "id": "bs",
+          "type": "node",
+          "parent": "1",
+          "label": "Five organisations. The auditor recommends, the committee decides, the authority confirms, the system mints."
+        },
+        {
+          "id": "lg1",
+          "type": "node",
+          "parent": "1",
+          "label": "Project Owner"
+        },
+        {
+          "id": "lg2",
+          "type": "node",
+          "parent": "1",
+          "label": "Auditor (VVB)"
+        },
+        {
+          "id": "lg3",
+          "type": "node",
+          "parent": "1",
+          "label": "Steering Committee"
+        },
+        {
+          "id": "lg6",
+          "type": "node",
+          "parent": "1",
+          "label": "Competent Authority (MoECC)"
+        },
+        {
+          "id": "lg4",
+          "type": "node",
+          "parent": "1",
+          "label": "Operations"
+        },
+        {
+          "id": "lg5",
+          "type": "node",
+          "parent": "1",
+          "label": "Automatic"
+        },
+        {
+          "id": "ph1",
+          "type": "node",
+          "parent": "1",
+          "label": "1 · REGISTER THE PROJECT"
+        },
+        {
+          "id": "b1",
+          "type": "node",
+          "parent": "1",
+          "label": "Owner submits the\nproject plan (PSF)"
+        },
+        {
+          "id": "b1a",
+          "type": "node",
+          "parent": "1",
+          "label": "Completeness check —\npresence & schema only,\nnot a judgment"
+        },
+        {
+          "id": "b2",
+          "type": "node",
+          "parent": "1",
+          "label": "Public can comment\nfor a fixed window"
+        },
+        {
+          "id": "b3",
+          "type": "node",
+          "parent": "1",
+          "label": "Seeded draw shortlists\neligible auditors;\nCommittee selects one\nwith a public reason"
+        },
+        {
+          "id": "b4",
+          "type": "node",
+          "parent": "1",
+          "label": "Auditor A (Certified Auditor)\nchecks the design,\nanswers every comment,\nissues the PVR:\nrecommend yes / no",
+          "html": "Auditor A (Certified Auditor)<br>checks the design,<br>answers every comment,<br>issues the PVR:<br>recommend yes / no"
+        },
+        {
+          "id": "b5",
+          "type": "node",
+          "parent": "1",
+          "label": "Committee decides:\nproject REGISTERED —\ncrediting period fixed",
+          "html": "Committee decides:<br><span style=\"font-weight: normal;\">project REGISTERED —<br>crediting period fixed</span>"
+        },
+        {
+          "id": "b5n",
+          "type": "node",
+          "parent": "1",
+          "label": "No credits exist yet&nbsp;"
+        },
+        {
+          "id": "ph2",
+          "type": "node",
+          "parent": "1",
+          "label": "2 · EARN CREDITS"
+        },
+        {
+          "id": "b6",
+          "type": "node",
+          "parent": "1",
+          "label": "Owner operates, measures,\nreports the results (PMR)"
+        },
+        {
+          "id": "b6a",
+          "type": "node",
+          "parent": "1",
+          "label": "Second seeded draw —\nauditor A excluded;\nCommittee selects a\ndifferent auditor (B ≠ A)"
+        },
+        {
+          "id": "b7",
+          "type": "node",
+          "parent": "1",
+          "label": "Auditor B (Certified Creditor)\nrecalculates from evidence,\nissues the ERVR with the\nverified quantity = BE − PE − LE",
+          "html": "Auditor B (Certified Creditor)<br>recalculates from evidence,<br>issues the ERVR with the<br>verified quantity = BE − PE − LE"
+        },
+        {
+          "id": "b8",
+          "type": "node",
+          "parent": "1",
+          "label": "Operations checks\nthe paperwork"
+        },
+        {
+          "id": "b9",
+          "type": "node",
+          "parent": "1",
+          "label": "Steering's Creditor Committee\napproves issuance\n(yes / no only)",
+          "html": "Steering's Creditor Committee<br>approves issuance<br>(yes / no only)"
+        },
+        {
+          "id": "JaASU19LGJu8xGfdlSRQ-6",
+          "type": "node",
+          "parent": "1",
+          "label": "Competent Authority (MoECC):\nconfirms or refuses\nthe issuance packet",
+          "html": "Competent Authority (MoECC):<div><span style=\"font-weight: 400;\">confirms or refuses the issuance packet</span></div>"
+        },
+        {
+          "id": "b10",
+          "type": "node",
+          "parent": "1",
+          "label": "Credits minted —\nexactly the ERVR number,\nserialised, dated"
+        },
+        {
+          "id": "ph3",
+          "type": "node",
+          "parent": "1",
+          "label": "3 · USE THE CREDITS"
+        },
+        {
+          "id": "b11",
+          "type": "node",
+          "parent": "1",
+          "label": "Owner holds them"
+        },
+        {
+          "id": "b12",
+          "type": "node",
+          "parent": "1",
+          "label": "Carbon Market"
+        },
+        {
+          "id": "b13",
+          "type": "node",
+          "parent": "1",
+          "label": "RETIRED against a named\nbeneficiary — permanent,\ncertificate issued"
+        },
+        {
+          "id": "b14",
+          "type": "node",
+          "parent": "1",
+          "label": "Anyone can look up any credit\nby serial number — no login"
+        },
+        {
+          "id": "docs",
+          "type": "node",
+          "parent": "1",
+          "label": "The four documents — claim, audit, claim, audit:&nbsp;&nbsp;PSF = owner's project plan&nbsp;&nbsp;·&nbsp;&nbsp;PVR = auditor A's design-audit report&nbsp;&nbsp;·&nbsp;&nbsp;PMR = owner's measured results&nbsp;&nbsp;·&nbsp;&nbsp;ERVR = auditor B's performance-audit report (carries the verified quantity)"
+        },
+        {
+          "id": "tr",
+          "type": "node",
+          "parent": "1",
+          "label": "The three rules that make a credit trustworthy &amp; distinguish us"
+        },
+        {
+          "id": "tr1",
+          "type": "node",
+          "parent": "1",
+          "label": "The party that audits a project's design is never the party that audits its performance — Certified Auditor vs Certified Creditor, at institution level."
+        },
+        {
+          "id": "tr2",
+          "type": "node",
+          "parent": "1",
+          "label": "The issued quantity is the Certified Creditor's recalculation — BE − PE − LE in tCO₂e under the pinned GWP set — checked for arithmetic consistency before any decision sees it."
+        },
+        {
+          "id": "tr3",
+          "type": "node",
+          "parent": "1",
+          "label": "No person can mint or un-retire. Every report, decision and confirmation is published to a blockchain-based public ledger, tamper-evident."
+        },
+        {
+          "id": "e1",
+          "type": "edge",
+          "parent": "1",
+          "source": "b1",
+          "target": "b1a"
+        },
+        {
+          "id": "e1b",
+          "type": "edge",
+          "parent": "1",
+          "source": "b1a",
+          "target": "b2"
+        },
+        {
+          "id": "e2",
+          "type": "edge",
+          "parent": "1",
+          "source": "b2",
+          "target": "b3"
+        },
+        {
+          "id": "e3",
+          "type": "edge",
+          "parent": "1",
+          "source": "b3",
+          "target": "b4"
+        },
+        {
+          "id": "e4",
+          "type": "edge",
+          "parent": "1",
+          "source": "b4",
+          "target": "b5"
+        },
+        {
+          "id": "e5",
+          "type": "edge",
+          "parent": "1",
+          "source": "b5",
+          "target": "b6",
+          "label": "registered"
+        },
+        {
+          "id": "e6",
+          "type": "edge",
+          "parent": "1",
+          "source": "b6",
+          "target": "b6a"
+        },
+        {
+          "id": "e6b",
+          "type": "edge",
+          "parent": "1",
+          "source": "b6a",
+          "target": "b7"
+        },
+        {
+          "id": "e7",
+          "type": "edge",
+          "parent": "1",
+          "source": "b7",
+          "target": "b8"
+        },
+        {
+          "id": "e8",
+          "type": "edge",
+          "parent": "1",
+          "source": "b8",
+          "target": "b9"
+        },
+        {
+          "id": "e9",
+          "type": "edge",
+          "parent": "1",
+          "source": "b9",
+          "target": "JaASU19LGJu8xGfdlSRQ-6",
+          "label": "approved · issuance packet"
+        },
+        {
+          "id": "JaASU19LGJu8xGfdlSRQ-8",
+          "type": "edge",
+          "parent": "1",
+          "source": "JaASU19LGJu8xGfdlSRQ-6",
+          "target": "b10",
+          "label": "confirmed"
+        },
+        {
+          "id": "e9r",
+          "type": "edge",
+          "parent": "1",
+          "source": "JaASU19LGJu8xGfdlSRQ-6",
+          "target": "b9",
+          "label": "refused, with reason"
+        },
+        {
+          "id": "e10",
+          "type": "edge",
+          "parent": "1",
+          "source": "b10",
+          "target": "b6",
+          "label": "next period"
+        },
+        {
+          "id": "e11",
+          "type": "edge",
+          "parent": "1",
+          "source": "b10",
+          "target": "b11",
+          "label": "credited to owner"
+        },
+        {
+          "id": "e12",
+          "type": "edge",
+          "parent": "1",
+          "source": "b11",
+          "target": "b12"
+        },
+        {
+          "id": "e13",
+          "type": "edge",
+          "parent": "1",
+          "source": "b12",
+          "target": "b13"
+        },
+        {
+          "id": "e14",
+          "type": "edge",
+          "parent": "1",
+          "source": "b13",
+          "target": "b14"
+        }
+      ]
+    },
+    {
+      "id": "tech-flow-01",
+      "name": "Technical flow",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "tt",
+          "type": "node",
+          "parent": "1",
+          "label": "Technical architecture"
+        },
+        {
+          "id": "L1",
+          "type": "node",
+          "parent": "1",
+          "label": "LAYER 1 · INTERFACE — React Router v8, Framework Mode (Node 22+, Vite 7)"
+        },
+        {
+          "id": "i1",
+          "type": "node",
+          "parent": "L1",
+          "label": "Owner workspace\nPSF · PMR · findings inbox\nholdings, transfer, retire"
+        },
+        {
+          "id": "i2",
+          "type": "node",
+          "parent": "L1",
+          "label": "Auditor workspace\ndesk review · findings ·\nquantification · opinion · report"
+        },
+        {
+          "id": "i3",
+          "type": "node",
+          "parent": "L1",
+          "label": "Committee workspace\ndecision packets",
+          "html": "Committee workspace<br>decision packets"
+        },
+        {
+          "id": "i4",
+          "type": "node",
+          "parent": "L1",
+          "label": "Operations workspace\nmoderation · compliance review"
+        },
+        {
+          "id": "i5",
+          "type": "node",
+          "parent": "L1",
+          "label": "Public pages (no login)\nproject page · serial lookup ·\nconsultation comments"
+        },
+        {
+          "id": "L2",
+          "type": "node",
+          "parent": "1",
+          "label": "LAYER 2 · API — FastAPI · PostgreSQL 16 (btree_gist) · Redis + ARQ · object storage"
+        },
+        {
+          "id": "a1",
+          "type": "node",
+          "parent": "L2",
+          "label": "Authorization\ninstitution → stage →\nacted upon institution → permitted actions",
+          "html": "Authorization<br><span style=\"font-weight: normal;\">institution → stage →<br>acted upon institution → permitted actions</span>"
+        },
+        {
+          "id": "a2",
+          "type": "node",
+          "parent": "L2",
+          "label": "Logic/State machines S1–S12\nwith an advance() function to move from 1 to another",
+          "html": "Logic/State machines S1–S12<br>with an advance() function to move from 1 to another"
+        },
+        {
+          "id": "a3",
+          "type": "node",
+          "parent": "L2",
+          "label": "Postgres\nsaving serial ranges ·\nappend-only audit · decision logs",
+          "html": "Postgres<br>saving serial ranges ·<br>append-only audit ·&nbsp;decision logs"
+        },
+        {
+          "id": "a4",
+          "type": "node",
+          "parent": "L2",
+          "label": "Object storage\ndocuments · evidence\n(content hash in Postgres)"
+        },
+        {
+          "id": "a5",
+          "type": "node",
+          "parent": "L2",
+          "label": "Issuance job\nreads decision + attested ERVR.\n\nCalling the minting smart contract",
+          "html": "Issuance job<br>reads decision + attested ERVR.<div><br>Calling the minting smart contract</div>"
+        },
+        {
+          "id": "a6",
+          "type": "node",
+          "parent": "L2",
+          "label": "Publisher worker (ARQ)\noutbox → canonical JSON → hash →\nchain · single-concurrency (one nonce\nowner) · product works if chain is down"
+        },
+        {
+          "id": "a7",
+          "type": "node",
+          "parent": "L2",
+          "label": "Indexer worker (ARQ)\nchain events → read model\nmirror reconciliation vs balances"
+        },
+        {
+          "id": "a8",
+          "type": "node",
+          "parent": "L2",
+          "label": "Redis\nqueues · cached read models only —\nnever gates, capabilities, stage state"
+        },
+        {
+          "id": "L3",
+          "type": "node",
+          "parent": "1",
+          "label": "LAYER 3 · ON-CHAIN — Solidity + Foundry · Arbitrum testnet (settles to Ethereum)"
+        },
+        {
+          "id": "c1",
+          "type": "node",
+          "parent": "L3",
+          "label": "SC-1 Registry\ninstitutions · accreditation windows ·\nprojects · engagements\n(verification reverts for the validator)"
+        },
+        {
+          "id": "c2",
+          "type": "node",
+          "parent": "L3",
+          "label": "SC-2 Attestation\nM1: anchor(hash) only →\nM4: attestReport / attestDecision\nTHRESHOLD-SIGNED by Steering keys\nsole mint authority",
+          "html": "SC-2 Attestation<br><span style=\"font-weight: normal;\">M1: anchor(hash) only →<br>M4: attestReport / attestDecision<br>THRESHOLD-SIGNED by Steering keys<br>sole mint authority</span>"
+        },
+        {
+          "id": "c3",
+          "type": "node",
+          "parent": "L3",
+          "label": "SC-3 ACC Token — NOT upgradeable\nERC-1155 · class = (project, vintage, auth)\none mint per class, ever · no admin mint\nretire() burns + calls SC-4 atomically"
+        },
+        {
+          "id": "c4",
+          "type": "node",
+          "parent": "L3",
+          "label": "SC-4 Certificate — NOT upgradeable\nERC-721 soulbound · callable only by SC-3\nbeneficiary · reason · quantity · serials"
+        },
+        {
+          "id": "c5",
+          "type": "node",
+          "parent": "L3",
+          "label": "Chain-authoritative for the unit once\nminted; DB becomes a mirror.\nPublicly verifiable + tamper-evident —\nnot trustless, not decentralised"
+        },
+        {
+          "id": "L4",
+          "type": "node",
+          "parent": "1",
+          "label": "ETS INTERFACE — trading and retirement (venue: open decision D-2)"
+        },
+        {
+          "id": "m1",
+          "type": "node",
+          "parent": "L4",
+          "label": "Eligibility gate\nvintage · methodology ·\nlabels shown as NOT ASSESSED",
+          "html": "Eligibility gate<br>vintage · methodology ·<br>labels shown as NOT ASSESSED"
+        },
+        {
+          "id": "m2",
+          "type": "node",
+          "parent": "L4",
+          "label": "Option A (internal): escrow order book\ncontract — atomic credit ↔ stablecoin\nswap. NOT an AMM: pooling launders\nquality across projects and vintages"
+        },
+        {
+          "id": "m3",
+          "type": "node",
+          "parent": "L4",
+          "label": "Option B (external venue):\nexport boundary — unit locked\nTRANSFERRED_OUT locally so it\ncannot be double-spent across the seam"
+        },
+        {
+          "id": "m4",
+          "type": "node",
+          "parent": "L4",
+          "label": "Retirement — terminal\nSC-3 burn → SC-4 certificate ·\nserial lookup shows RETIRED forever"
+        },
+        {
+          "id": "f1",
+          "type": "edge",
+          "parent": "1",
+          "source": "L1",
+          "target": "L2",
+          "label": "HTTPS · session cookie&nbsp;"
+        },
+        {
+          "id": "f2",
+          "type": "edge",
+          "parent": "1",
+          "source": "L2",
+          "target": "L3",
+          "label": "outbox → publisher → contracts (web3.py, relayer key)"
+        },
+        {
+          "id": "f3",
+          "type": "edge",
+          "parent": "1",
+          "source": "L3",
+          "target": "L2",
+          "label": "events → indexer → read model"
+        },
+        {
+          "id": "f4",
+          "type": "edge",
+          "parent": "1",
+          "source": "L3",
+          "target": "L4",
+          "label": "transfer / retire settle on SC-3"
+        },
+        {
+          "id": "JhhvtwFhPB2JVSXo5kZR-2",
+          "type": "edge",
+          "parent": "1",
+          "source": "JhhvtwFhPB2JVSXo5kZR-1"
+        },
+        {
+          "id": "JhhvtwFhPB2JVSXo5kZR-1",
+          "type": "node",
+          "parent": "1",
+          "label": "REQUEST -> Caddy Reverse-Proxy ->credits.ets-gcc.org",
+          "html": "<div>REQUEST -&gt; Caddy Reverse-Proxy -&gt;</div>credits.ets-gcc.org"
+        }
+      ]
+    }
+  ]
+}
