@@ -600,7 +600,15 @@ export const CONTENT: Record<string, ContentEntry> = {
     sections: [
       {
         paras: [
-          "Auditor B, under a Certified Creditor lead, rebuilds the reductions from evidence rather than from the owner's claim. The ERVR states the verified quantity as BE − PE − LE (baseline minus project minus leakage emissions), each term in tonnes of CO₂-equivalent, plus the greenhouse-gas conversion table (GWP set) the pinned methodology requires. Gases other than CO₂ get a per-gas conversion line.",
+          "Auditor B, under a Certified Creditor lead, rebuilds the reductions from evidence rather than from the owner's claim. The framework's three equations give the work its shape.",
+        ],
+      },
+      {
+        heading: "The recalculation, equation by equation",
+        bullets: [
+          "Convert: CO₂e = Σ (Eᵢ × GWPᵢ). Auditor B takes each measured gas from the monitoring evidence, applies the Global Warming Potential the pinned methodology names, and lands each stream in tonnes of CO₂-equivalent. The ERVR shows a per-gas line wherever a gas other than CO₂ appears, and the platform checks the GWP set matches.",
+          "Rebuild: ER = BE − PE − LE. Auditor B derives each term from evidence under the methodology: the baseline BE (the emissions of a world without the project), the project's own emissions PE, and leakage LE (emissions the project pushed elsewhere). The difference is the verified quantity, and this derivation carries the audit's judgment.",
+          "Scope: A = Σ Ay. One ERVR covers one monitoring period, so Auditor B contributes one term of the accumulation. The project's total grows period by period, one mint each, and no period counts twice.",
         ],
       },
       {
